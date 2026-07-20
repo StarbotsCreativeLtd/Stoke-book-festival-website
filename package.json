@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "tailwindcss -i ./frontend/css/input.css -o ./frontend/css/style.css --watch",
+    "build": "tailwindcss -i ./frontend/css/input.css -o ./frontend/css/style.css --minify",
+    "format": "prettier --write \"frontend/**/*.{html,css,js,json}\"",
+    "format:check": "prettier --check \"frontend/**/*.{html,css,js,json}\""
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "prettier": "^3.9.5",
+    "tailwindcss": "^4.3.3"
+  }
+}

@@ -1,14 +1,15 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Node modules
 
-# production
-/build
+node_modules/
 
-# misc
+# Build output
+
+dist/
+
+# macOS
+
 .DS_Store
-*.pem
 
-# env files (can opt-in for committing if needed)
-.env*
+# Logs
 
-# vs code
-.vscode*
+*.log
