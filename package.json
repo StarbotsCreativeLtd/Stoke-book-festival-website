@@ -1,11 +1,13 @@
 {
   "scripts": {
-    "dev": "tailwindcss -i ./frontend/css/input.css -o ./frontend/css/style.css --watch",
-    "build": "tailwindcss -i ./frontend/css/input.css -o ./frontend/css/style.css --minify",
-    "format": "prettier --write \"frontend/**/*.{html,css,js,json}\"",
-    "format:check": "prettier --check \"frontend/**/*.{html,css,js,json}\""
+    "dev": "tailwindcss -i ./docs/css/input.css -o ./docs/css/style.css --watch",
+    "build": "tailwindcss -i ./docs/css/input.css -o ./docs/css/style.css --minify",
+    "format": "prettier --write \"docs/**/*.{html,css,js,json}\"",
+    "format:check": "prettier --check \"docs/**/*.{html,css,js,json}\""
   },
-  "dependencies": {
+
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.8.1",
     "@tailwindcss/cli": "^4.3.3",
     "prettier": "^3.9.5",
     "tailwindcss": "^4.3.3"
