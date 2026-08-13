@@ -1,1 +1,103 @@
 @import "tailwindcss";
+@import "./author.css";
+@import "./quilon.css";
+
+@theme inline {
+  --font-author: "Author", sans-serif;
+  --font-quilon: "Quilon", sans-serif;
+
+  /* --color-*: initial; */
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+  --color-yellow: #ffd167;
+  --color-navy: #1d1b56;
+  --color-light-blue: #5db0be;
+  --color-orange: #ee7b43;
+  --color-purple: #9f86be;
+  --color-light-purple: #dedcee;
+  --color-green: #4a7956;
+  --color-light-green: #a0d5b5;
+
+  --color-extralight-yellow: #ffdf96;
+  --color-extralight-purple: #efedf2;
+  --color-extralight-green: #d9e3db;
+  --color-extralight-orange: #fce5d9;
+}
+
+body {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .display-title {
+    @apply font-quilon text-[115px];
+  }
+  .section-title {
+    @apply font-quilon mb-12 text-5xl;
+  }
+  .title {
+    @apply font-quilon text-4xl font-light xl:text-5xl;
+  }
+  .body-copy {
+    @apply font-author text-xl font-extralight xl:text-2xl;
+  }
+
+  .button {
+    @apply font-quilon rounded-full px-6 py-4 whitespace-nowrap transition-all duration-100 hover:scale-[102%] active:scale-[98%];
+  }
+
+  .card-grid {
+    @apply mx-auto grid max-w-screen-2xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:gap-8;
+  }
+
+  .card {
+    @apply relative col-span-1 flex size-full flex-col items-center overflow-hidden rounded-4xl;
+  }
+
+  .event-details {
+    @apply absolute inset-0 z-10 flex size-full translate-y-full flex-col items-start justify-between overflow-y-scroll px-8 pt-16 pb-8 transition-transform duration-300;
+  }
+
+  .double-card {
+    @apply col-span-2 size-full rounded-4xl;
+  }
+
+  .endcap-top-white {
+    clip-path: shape(from 100% 0, curve to 0 50% with 50% 80%, line to 0 0);
+    @apply -my-[1px] mb-12 h-[50px] w-full bg-white;
+  }
+
+  .endcap-top-navy {
+    clip-path: shape(from 100% 0, curve to 0 50% with 50% 80%, line to 0 0);
+    @apply bg-navy -my-[1px] h-[50px] w-full;
+  }
+  .endcap-bottom-white {
+    clip-path: shape(
+      from 0 100%,
+
+      curve to 100% 50% with 60% -10%,
+      line to 100% 100%
+    );
+    @apply -my-[1px] h-[50px] w-full bg-white;
+  }
+
+  .footer-fan-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ray-line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 6px;
+    height: 300%;
+    transform: translateX(-50%) translateY(60%) rotate(calc(var(--i) * 5deg));
+    @apply bg-extralight-yellow/40;
+  }
+}

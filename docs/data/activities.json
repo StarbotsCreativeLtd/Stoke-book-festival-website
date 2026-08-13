@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Book Club with Author Jess Kidd",
+    "date": "Monday 5 October 6pm",
+    "location": "Bluebird Café",
+    "cta": "Buy Tickets",
+    "price": "TBC",
+    "audience": "18+",
+    "content": "Have you read Jess Kidd's latest books? Join our special Book Club author event during the festival, where you can ask the author directly your usual book club questions! To make the most of the event, consider reading one of Jess Kidd's novels beforehand. Alternatively, just come to discover what a book club is all about and to hear Jess discuss the ideas behind her creative vision.",
+    "image": "./assets/images/event-images/JessKidd.jpg",
+    "alt": "Jess Kidd",
+    "ticketLink": "https://www.fatsoma.com/"
+  },
+  {
+    "title": "Story Tea",
+    "date": "Tuesday 6 October 7pm",
+    "location": "Stoke Library",
+    "cta": "Reserve Now",
+    "price": "Free Event",
+    "audience": "14+",
+    "content": "Let professional storyteller Pyn Stockman guide you on an extraordinary storytelling journey while you brew your own ‘StoryTea’ in a Staffordshire-made cup. As you listen to the story, ingredients mentioned throughout the book will become part of your unique story tea, which you can enjoy while sitting back and relaxing to the audible tale.",
+    "image": "./assets/images/event-images/StoryTea.jpg",
+    "alt": "Story Tea Image",
+    "ticketLink": "https://www.fatsoma.com/"
+  },
+  {
+    "title": "Stoke Book Club: Book Chat",
+    "date": "Wednesday 7 October 11am",
+    "location": "TBC",
+    "cta": "Drop In",
+    "price": "Free Event",
+    "audience": "18+",
+    "content": "No book festival is complete without launching a new book club. Join the Stoke Book Festival’s Book Club and begin your journey into books.",
+    "image": "./assets/images/event-images/BookChat.jpg",
+    "alt": "Book Chat image",
+    "ticketLink": "https://www.fatsoma.com/"
+  },
+  {
+    "title": "Charity Shop trail with Verity Babbs",
+    "date": "Thursday 8 October 1pm - 2:30pm",
+    "location": "Stoke Town",
+    "cta": "Reserve Now",
+    "price": "Free Event",
+    "audience": "14+",
+    "content": "Before Verity Babbs's evening performance, her viral social media content about Charity Shops will be live from Stoke. Join Verity on a walk about town as she guides you through charity shopping, sharing tips on finding the best bargains and what to look out for.",
+    "image": "./assets/images/event-images/VerityBabbs.jpg",
+    "alt": "Verity Babbs",
+    "ticketLink": "https://www.fatsoma.com/"
+  },
+  {
+    "title": "Shakespeare Words & Music with CSSO",
+    "date": "Friday 9 October 7pm",
+    "location": "Stoke Minster",
+    "cta": "Buy Tickets",
+    "price": "£10",
+    "audience": "14+",
+    "content": "A lively performance by the City of Stoke-on-Trent Symphony Orchestra who will take you on a musical journey inspired by Shakespeare's words that have sparked melodic notes. Enjoy a blend of music, Shakespeare, and a great time with artistic director Joe Hearson.",
+    "image": "./assets/images/event-images/Symphony.jpg",
+    "alt": "Symphony Orchestra image",
+    "ticketLink": "https://www.fatsoma.com/"
+  },
+  {
+    "title": "Take 10 to Read",
+    "date": "Saturday 10 October 10am",
+    "location": "Stoke Minster & Stoke Library",
+    "cta": "Drop In",
+    "price": "Free Event",
+    "audience": "All Ages",
+    "content": "Each year on 10 October for World Mental Health Day the National Literacy Trust call on the nation to #Take10ToRead. Join us on the festival Saturday with your favourite book (or a new one) and join us at one of our venues, Stoke Minster or Stoke Library for free Event refreshment a moment of peace and tranquillity inside or outside and take 10 to read.",
+    "image": "./assets/images/event-images/TakeTen.jpg",
+    "alt": "Take Ten Image",
+    "ticketLink": "https://www.fatsoma.com/"
+  },
+  {
+    "title": "Letters to Myself",
+    "date": "Saturday 10 October 10am",
+    "location": "Stoke Market",
+    "cta": "Drop In",
+    "price": "Free Event",
+    "audience": "All Ages",
+    "content": "Kate Leake, Stoke-on-Trent’s creative Laureate, is also a book illustrator and author. She will host the ‘Letters to Myself’ Workshop at Stoke Market, where participants will write a letter, poem, or prose dedicated to themselves. The festival will post these to you a year later! It’s a chance to reflect on the past or envision your future, with creative tips and inspiration from Kate as you illustrate your message, hopefully bringing a smile to your future self. All Ages - children accompanied by an adult",
+    "image": "./assets/images/event-images/LettersToMyself.jpg",
+    "alt": "Kate Leake image",
+    "ticketLink": "https://www.fatsoma.com/"
+  },
+  {
+    "title": "Local author mixer",
+    "date": "Saturday 10 October 12pm",
+    "location": "Stoke Minster",
+    "cta": "Drop In",
+    "price": "Free Event",
+    "audience": "16+",
+    "content": "Are you an author or writer based in North Staffordshire? The Stoke Book Festival is hosting a mixer event where you can meet fellow local writers, receive advice and tips from publishers and published authors. Join us for refreshments and conversation to support your writing journey.",
+    "image": "./assets/images/event-images/AuthorMixer.jpg",
+    "alt": "Author Mixer image",
+    "ticketLink": "https://www.fatsoma.com/"
+  },
+  {
+    "title": "Local Author Publishing Pannel",
+    "date": "Saturday 10 October 1pm",
+    "location": "Stoke Minster",
+    "cta": "Reserve Now",
+    "price": "Free Event",
+    "audience": "TBC",
+    "content": "",
+    "image": "./assets/images/event-images/Panel.jpg",
+    "alt": "Author Panel",
+    "ticketLink": "https://www.fatsoma.com/"
+  }
+]

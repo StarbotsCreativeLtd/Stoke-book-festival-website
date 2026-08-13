@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Helena Attlee",
+    "date": "Saturday 3 October at 7pm",
+    "location": "Stoke Minster",
+    "cta": "Buy Tickets",
+    "price": "TBC",
+    "audience": "14+",
+    "content": "Helena Attlee is an author and journalist specialising in gardens and their history. Her love of Italy and travel has inspired her work; her latest book, The Fire in the Mountain: Sicily, Etna, and Her People, published in April this year, narrates her experience of spending a season in a village on the slopes of Mount Etna, Europe’s largest and most active volcano, and explores the stories of the people and landscapes she encountered.",
+    "image": "./assets/images/event-images/Helena.jpg",
+    "alt": "Helena Attlee",
+    "ticketLink": "https://www.fatsoma.com/"
+  },
+  {
+    "title": "Mel Sherratt",
+    "date": "Wednesday 7 October 6.30pm",
+    "location": "Stoke Minster",
+    "cta": "Buy Tickets",
+    "price": "TBC",
+    "audience": "14+",
+    "content": "Mel, a bestselling author and passionate reader, has authored twenty-six novels that have sold over two million copies worldwide. Her crime fiction is known for its dark, emotionally resonant stories, with her latest, 'Family Matters,' released this year. Interestingly, she became an accidental crime writer and also writes under the pseudonym Marcie Steele, creating women's fiction centred on everyday characters that stir deep feelings. Her newest book, 'One Letter,' is a touching, optimistic tale about acceptance, family values, and the importance of feeling safe and loved. Join local Stoke-on-Trent author Mel Sheratt in conversation with [XX].",
+    "image": "./assets/images/event-images/MelSherratt.jpg",
+    "alt": "Mel Sherratt",
+    "ticketLink": "https://www.fatsoma.com/"
+  },
+  {
+    "title": "Verity Babbs 'Funny Bits'",
+    "date": "Thursday 8 October 7pm",
+    "location": "Stoke Minster",
+    "cta": "Buy Tickets",
+    "price": "TBC",
+    "audience": "14+",
+    "content": "Verity Babbs is an art historian, comedian, and presenter; she is a passionate advocate of Stoke-on-Trent's impressive ceramic heritage. As the founder of ‘Art Laughs Comedy,’ she skilfully makes art history accessible and engaging and most importantly, funny! Her stage act for the Stoke Book Festival blends stand-up comedy with discussions, all inspired by her book Art History in One Sentence.",
+    "image": "./assets/images/event-images/VerityBabbs.jpg",
+    "alt": "Verity Babbs",
+    "ticketLink": "https://www.fatsoma.com/"
+  },
+  {
+    "title": "AJ West",
+    "date": "Saturday 10 October 3pm",
+    "location": "Stoke Minster",
+    "cta": "Buy Tickets",
+    "price": "TBC",
+    "audience": "14+",
+    "content": "AJ West, a Sunday Times bestseller and winner of the Historical Dagger Award for The Betrayal of Thomas True, is a former BBC journalist and broadcaster. His upcoming book, The Deadly Inheritance of Everest Macdonald, scheduled for release in October 2026, promises a dark, atmospheric historical mystery. AJ also advocates for LGBTQ+ rights; his non-fiction work How Queer Bookshops Changed the World celebrates the courage and sanctuary of LGBTQ+ bookstores. Join AJ West at Stoke Book Festival’s closing event, where in conversation with [XX] will discuss his latest novel and share insights into his publishing journey and advocacy work.",
+    "image": "./assets/images/event-images/AJWest.jpg",
+    "alt": "Aj West",
+    "ticketLink": "https://www.fatsoma.com/"
+  }
+]
