@@ -10,9 +10,9 @@
 
     <script src="./js/mapEventsCards.js" defer></script>
     <script src="./js/openCloseCardDetails.js" defer></script>
-  
-    <script src="./js/createFooterFan.js" defer></script>
-      <script src="./js/animations.js" defer></script>
+
+    <script src="./js/createFans.js" defer></script>
+    <script src="./js/animations.js" defer></script>
 
     <!-- GSAP IMPORTS -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
@@ -30,7 +30,7 @@
       </div>
 
       <!-- === EVENTS SECTION === -->
-      <div class="mx-auto mb-24 flex max-w-7xl flex-row items-center justify-center space-x-8">
+      <div class="mx-auto mb-24 flex flex-wrap max-w-7xl flex-row items-center justify-center space-x-8">
         <a
           aria-label="Skip to author Events"
           href="#author-events"
@@ -71,18 +71,121 @@
         <div id="family-cards-grid" class="card-grid"></div>
       </section>
 
+      <!-- <section>
+        <div class="h-[300px] aspect-square"><div class="left-card-fan-container"></div></div>
+        
+        
+      </section> -->
+
       <section id="what-to-expect">
-        <div class="bg-navy relative h-98">
+        <div class="bg-navy relative pb-22">
           <div class="endcap-top-white absolute"></div>
+          <div class="h-22 w-full"></div>
+
+          <!-- Be Part of the story -->
+
+          <!-- MOBILE -->
+
+          <div class="md:hidden flex flex-col w-full max-w-xl p-6 mx-auto">
+            <img src="./assets//images/buildings/mobileBePart.png" class="w-full h-auto object-bottom object-contain" />
+<div class="-mt-1 bg-[#E2DBEB] rounded-b-3xl overflow-hidden"><div class="flex- z-50 flex-col space-y-6 px-7 pb-8">
+                  <h3 class="title text-5xl text-navy">Be Part of the Story</h3>
+                  <p class="body-copy">
+                    Explore the festival programme and reserve your place at the events you would
+                    like to attend.
+                  </p>
+                  <div class="z-100 flex">
+                    <a href="fatsoma.co.uk" class="button bg-light-blue text-xl text-white"
+                      >Book your place today</a
+                    >
+                  </div>
+                </div></div>
+          </div>
+
+          <!-- DESKTOP -->
+          <div class="mt-22 w-full px-3 hidden md:block">
+            <div class="relative mx-auto w-full max-w-6xl overflow-hidden pt-22">
+              <!-- IMAGE OVERLAY GRID -->
+              <div
+                class="pointer-events-none absolute bottom-0 left-0 grid size-full w-full grid-cols-2"
+              >
+                
+                <div class="relative z-50 size-full col-start-2 col-span-1">
+                  <img
+                    class="absolute -bottom-1 left-1/2 h-full w-auto origin-bottom -translate-x-1/2 object-contain"
+                    src="./assets/images/buildings/Stoke Minster.png"
+                  />
+                </div>
+              </div>
+              <!-- Info card with fans -->
+              <div
+                class="relative grid w-full grid-cols-2 overflow-hidden rounded-3xl bg-[#E2DBEB]"
+              >
+              <!-- LEFT FAN -->
+                <div
+                  class="absolute -top-20 left-[-60%] z-10 aspect-square h-[310%] origin-center translate-x-1/2"
+                >
+                  <div class="left-card-fan-container"></div>
+                </div>
+                <!-- RIGHT FAN -->
+                <div
+                  class="absolute top-[-180%] -right-30 z-10 aspect-square md:h-[220%] lg:h-[250%] origin-center"
+                >
+                  <div class="right-card-fan-container"></div>
+                </div>
+                <div class="flex- z-50 flex-col space-y-6 px-7 py-8">
+                  <h3 class="title text-navy">Be Part of the Story</h3>
+                  <p class="body-copy">
+                    Explore the festival programme and reserve your place at the events you would
+                    like to attend.
+                  </p>
+                  <div class="z-100 flex">
+                    <a href="fatsoma.co.uk" class="button bg-light-blue text-2xl text-white"
+                      >Book your place today</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- <div class="endcap-bottom-navy"></div> -->
       </section>
     </main>
+
+    <!-- === PARTNERS === -->
+    <section class="bg-light-blue flex w-full flex-col items-center justify-center px-6 py-16 md:py-22">
+      <h2 class="section-title text-navy text-center">Our Partners</h2>
+      <div class="flex flex-wrap items-center justify-center gap-6 md:gap-12">
+        <img
+          src="./assets/images/partners-images/National year of reading 2026 logo.png"
+          class=" h-[80px] md:h-[150px] w-auto"
+        />
+        <img
+          src="./assets/images/partners-images/Stoke Minster logo.png"
+          class=" h-[80px] md:h-[150px] w-auto"
+        />
+        <img
+          src="./assets/images/partners-images/Made in Stoke logo.png"
+          class=" h-[80px] md:h-[150px] w-auto"
+        />
+        <img
+          src="./assets/images/partners-images/Visit Stoke-on-Trent logo.png"
+          class=" h-[80px] md:h-[150px] w-auto"
+        />
+        <img
+          src="./assets/images/partners-images/City of Stoke-on-Trent logo.png"
+          class=" h-[80px] md:h-[150px] w-auto"
+        />
+        <img src="./assets/images/partners-images/Gareth Snell logo.png" class=" h-[80px] md:h-[150px] w-auto" />
+        <img src="./assets/images/partners-images/YMCA logo.png" class=" h-[80px] md:h-[150px] w-auto" />
+      </div>
+    </section>
+
+    <!-- === FOOTER === -->
     <footer class="bg-yellow relative w-full overflow-hidden pt-18 pb-17.5">
-      <div class="endcap-top-navy absolute inset-0 z-50"></div>
+      <div class="endcap-top-light-blue absolute inset-0 z-50"></div>
       <div class="absolute inset-0 z-0 size-full overflow-hidden">
-        <div class="footer-fan-container">
-        </div>
+        <div class="footer-fan-container"></div>
       </div>
 
       <!-- === FOOTER MAIN === -->

@@ -40,7 +40,7 @@ body {
     @apply font-quilon mb-12 text-5xl;
   }
   .title {
-    @apply font-quilon text-4xl font-light xl:text-5xl;
+    @apply font-quilon  font-light text-5xl;
   }
   .body-copy {
     @apply font-author text-xl font-extralight xl:text-2xl;
@@ -70,7 +70,10 @@ body {
     clip-path: shape(from 100% 0, curve to 0 50% with 50% 80%, line to 0 0);
     @apply -my-[1px] mb-12 h-[50px] w-full bg-white;
   }
-
+  .endcap-top-light-blue {
+    clip-path: shape(from 100% 0, curve to 0 50% with 50% 80%, line to 0 0);
+    @apply bg-light-blue -my-[1px] h-[50px] w-full;
+  }
   .endcap-top-navy {
     clip-path: shape(from 100% 0, curve to 0 50% with 50% 80%, line to 0 0);
     @apply bg-navy -my-[1px] h-[50px] w-full;
@@ -91,6 +94,24 @@ body {
     height: 100%;
   }
 
+  .footer-fan-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .left-card-fan-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .right-card-fan-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
   .ray-line {
     position: absolute;
     bottom: 0;
@@ -99,5 +120,21 @@ body {
     height: 300%;
     transform: translateX(-50%) translateY(60%) rotate(calc(var(--i) * 5deg));
     @apply bg-extralight-yellow/40;
+  }
+
+  .light-purple-ray-line {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    transform: rotate(calc(var(--i) * 3deg));
+    @apply bg-purple/6 top-0 left-1/2;
+  }
+
+  .purple-ray-line {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    transform: rotate(calc(var(--i) * 5deg));
+    @apply bg-purple top-0 left-1/2;
   }
 }
