@@ -30,7 +30,9 @@
       </div>
 
       <!-- === EVENTS SECTION === -->
-      <div class="mx-auto mb-24 flex flex-wrap max-w-7xl flex-row items-center justify-center space-x-8">
+      <div
+        class="mx-auto mb-12 flex max-w-7xl flex-row flex-wrap items-center justify-center gap-6 md:mb-24 md:gap-8"
+      >
         <a
           aria-label="Skip to author Events"
           href="#author-events"
@@ -80,37 +82,81 @@
       <section id="what-to-expect">
         <div class="bg-navy relative pb-22">
           <div class="endcap-top-white absolute"></div>
-          <div class="h-22 w-full"></div>
+          <div
+            class="mx-auto flex w-full max-w-7xl flex-col items-center justify-center pt-32 text-white"
+          >
+            <h2 class="section-title text-center">What to Expect</h2>
+            <p class="body-copy max-w-3xl text-center">
+              We’re delighted that Stoke Minster will be hosting this festival with support from
+              Stoke-on-Trent Libraries and the National Literacy Trust. 
+            </p>
+            <div class="mt-18 mx-auto mx-w-2xl flex flex-wrap items-center gap-y-8 justify-center">
+              <div class="part w-full sm:w-1/2 md:w-1/3 flex flex-col items-center justify-center space-y-4 ">
+                <div class="aspect-square size-32">
+                  <img src="./assets//images/numbers/Frame 1.svg" class="size-full" />
+                </div>
+                <p class="body-copy text-center max-w-[280px]">Inspiring talks and conversations with local and national authors</p>
+              </div>
+              <div class="part w-full sm:w-1/2 md:w-1/3 flex flex-col items-center justify-center space-y-4 ">
+                <div class="aspect-square size-32">
+                  <img src="./assets//images/numbers/Frame 2.svg" class="size-full" />
+                </div>
+                <p class="body-copy text-center max-w-[280px]">Inspiring talks and conversations with local and national authors</p>
+              </div>
+              <div class="part w-full sm:w-1/2 md:w-1/3 flex flex-col items-center justify-center space-y-4 ">
+                <div class="aspect-square size-32">
+                  <img src="./assets//images/numbers/Frame 3.svg" class="size-full" />
+                </div>
+                <p class="body-copy text-center max-w-[280px]">Inspiring talks and conversations with local and national authors</p>
+              </div>
+              <div class="part w-full sm:w-1/2 md:w-1/3 flex flex-col items-center justify-center space-y-4 ">
+                <div class="aspect-square size-32">
+                  <img src="./assets//images/numbers/Frame 4.svg" class="size-full" />
+                </div>
+                <p class="body-copy text-center max-w-[280px]">Inspiring talks and conversations with local and national authors</p>
+              </div>
+              <div class="part w-full sm:w-1/2 md:w-1/3 flex flex-col items-center justify-center space-y-4 ">
+                <div class="aspect-square size-32">
+                  <img src="./assets//images/numbers/Frame 5.svg" class="size-full" />
+                </div>
+                <p class="body-copy text-center max-w-[280px]">Inspiring talks and conversations with local and national authors</p>
+              </div>
+            </div>
+          </div>
 
-          <!-- Be Part of the story -->
+          <!-- Be Part w-full sm:w-1/2 md:w-1/3 flex flex-col items-center justify-center space-y-4  of the story -->
 
           <!-- MOBILE -->
 
-          <div class="md:hidden flex flex-col w-full max-w-xl p-6 mx-auto">
-            <img src="./assets//images/buildings/mobileBePart.png" class="w-full h-auto object-bottom object-contain" />
-<div class="-mt-1 bg-[#E2DBEB] rounded-b-3xl overflow-hidden"><div class="flex- z-50 flex-col space-y-6 px-7 pb-8">
-                  <h3 class="title text-5xl text-navy">Be Part of the Story</h3>
-                  <p class="body-copy">
-                    Explore the festival programme and reserve your place at the events you would
-                    like to attend.
-                  </p>
-                  <div class="z-100 flex">
-                    <a href="fatsoma.co.uk" class="button bg-light-blue text-xl text-white"
-                      >Book your place today</a
-                    >
-                  </div>
-                </div></div>
+          <div class="mx-auto flex w-full max-w-xl flex-col mt-12 p-6 md:hidden">
+            <img
+              src="./assets//images/buildings/mobileBePart.png"
+              class="h-auto w-full object-contain object-bottom"
+            />
+            <div class="-mt-1 overflow-hidden rounded-b-3xl bg-[#E2DBEB]">
+              <div class="flex- z-50 flex-col space-y-6 px-7 pb-8">
+                <h3 class="title text-navy text-5xl">Be Part of the Story</h3>
+                <p class="body-copy">
+                  Explore the festival programme and reserve your place at the events you would like
+                  to attend.
+                </p>
+                <div class="z-100 flex">
+                  <a href="fatsoma.co.uk" class="button bg-light-blue text-xl text-white"
+                    >Book your place today</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- DESKTOP -->
-          <div class="mt-22 w-full px-3 hidden md:block">
+          <div class="mt-22 hidden w-full px-3 md:block">
             <div class="relative mx-auto w-full max-w-6xl overflow-hidden pt-22">
               <!-- IMAGE OVERLAY GRID -->
               <div
                 class="pointer-events-none absolute bottom-0 left-0 grid size-full w-full grid-cols-2"
               >
-                
-                <div class="relative z-50 size-full col-start-2 col-span-1">
+                <div class="relative z-50 col-span-1 col-start-2 size-full">
                   <img
                     class="absolute -bottom-1 left-1/2 h-full w-auto origin-bottom -translate-x-1/2 object-contain"
                     src="./assets/images/buildings/Stoke Minster.png"
@@ -121,7 +167,7 @@
               <div
                 class="relative grid w-full grid-cols-2 overflow-hidden rounded-3xl bg-[#E2DBEB]"
               >
-              <!-- LEFT FAN -->
+                <!-- LEFT FAN -->
                 <div
                   class="absolute -top-20 left-[-60%] z-10 aspect-square h-[310%] origin-center translate-x-1/2"
                 >
@@ -129,7 +175,7 @@
                 </div>
                 <!-- RIGHT FAN -->
                 <div
-                  class="absolute top-[-180%] -right-30 z-10 aspect-square md:h-[220%] lg:h-[250%] origin-center"
+                  class="absolute top-[-180%] -right-30 z-10 aspect-square origin-center md:h-[220%] lg:h-[250%]"
                 >
                   <div class="right-card-fan-container"></div>
                 </div>
@@ -153,31 +199,39 @@
     </main>
 
     <!-- === PARTNERS === -->
-    <section class="bg-light-blue flex w-full flex-col items-center justify-center px-6 py-16 md:py-22">
-      <h2 class="section-title text-navy text-center">Our Partners</h2>
+    <section
+      class="bg-light-blue flex w-full flex-col items-center justify-center px-6 py-16 md:py-22"
+    >
+      <h2 class="section-title text-navy text-center">Our Part ners</h2>
       <div class="flex flex-wrap items-center justify-center gap-6 md:gap-12">
         <img
           src="./assets/images/partners-images/National year of reading 2026 logo.png"
-          class=" h-[80px] md:h-[150px] w-auto"
+          class="h-[80px] w-auto md:h-[150px]"
         />
         <img
           src="./assets/images/partners-images/Stoke Minster logo.png"
-          class=" h-[80px] md:h-[150px] w-auto"
+          class="h-[80px] w-auto md:h-[150px]"
         />
         <img
           src="./assets/images/partners-images/Made in Stoke logo.png"
-          class=" h-[80px] md:h-[150px] w-auto"
+          class="h-[80px] w-auto md:h-[150px]"
         />
         <img
           src="./assets/images/partners-images/Visit Stoke-on-Trent logo.png"
-          class=" h-[80px] md:h-[150px] w-auto"
+          class="h-[80px] w-auto md:h-[150px]"
         />
         <img
           src="./assets/images/partners-images/City of Stoke-on-Trent logo.png"
-          class=" h-[80px] md:h-[150px] w-auto"
+          class="h-[80px] w-auto md:h-[150px]"
         />
-        <img src="./assets/images/partners-images/Gareth Snell logo.png" class=" h-[80px] md:h-[150px] w-auto" />
-        <img src="./assets/images/partners-images/YMCA logo.png" class=" h-[80px] md:h-[150px] w-auto" />
+        <img
+          src="./assets/images/partners-images/Gareth Snell logo.png"
+          class="h-[80px] w-auto md:h-[150px]"
+        />
+        <img
+          src="./assets/images/partners-images/YMCA logo.png"
+          class="h-[80px] w-auto md:h-[150px]"
+        />
       </div>
     </section>
 

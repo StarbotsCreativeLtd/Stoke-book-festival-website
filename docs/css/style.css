@@ -13,6 +13,7 @@
     --spacing: 0.25rem;
     --breakpoint-2xl: 96rem;
     --container-xl: 36rem;
+    --container-3xl: 48rem;
     --container-6xl: 72rem;
     --container-7xl: 80rem;
     --text-base: 1rem;
@@ -25,8 +26,6 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-extralight: 200;
@@ -266,14 +265,17 @@
   .-mt-1 {
     margin-top: calc(var(--spacing) * -1);
   }
-  .-mt-4 {
-    margin-top: calc(var(--spacing) * -4);
-  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
+  .mt-18 {
+    margin-top: calc(var(--spacing) * 18);
   }
   .mt-22 {
     margin-top: calc(var(--spacing) * 22);
@@ -281,11 +283,11 @@
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
+  }
   .mb-22 {
     margin-bottom: calc(var(--spacing) * 22);
-  }
-  .mb-24 {
-    margin-bottom: calc(var(--spacing) * 24);
   }
   .line-clamp-2 {
     overflow: hidden;
@@ -316,6 +318,10 @@
     width: calc(var(--spacing) * 16);
     height: calc(var(--spacing) * 16);
   }
+  .size-32 {
+    width: calc(var(--spacing) * 32);
+    height: calc(var(--spacing) * 32);
+  }
   .size-full {
     width: 100%;
     height: 100%;
@@ -323,14 +329,8 @@
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
-  .h-22 {
-    height: calc(var(--spacing) * 22);
-  }
   .h-\[80px\] {
     height: 80px;
-  }
-  .h-\[150px\] {
-    height: 150px;
   }
   .h-\[300px\] {
     height: 300px;
@@ -347,6 +347,9 @@
   .h-screen {
     height: 100vh;
   }
+  .w-1\/3 {
+    width: calc(1 / 3 * 100%);
+  }
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
@@ -362,11 +365,17 @@
   .w-screen {
     width: 100vw;
   }
+  .max-w-3xl {
+    max-width: var(--container-3xl);
+  }
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
   .max-w-7xl {
     max-width: var(--container-7xl);
+  }
+  .max-w-\[280px\] {
+    max-width: 280px;
   }
   .max-w-xl {
     max-width: var(--container-xl);
@@ -438,18 +447,24 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
-  .gap-12 {
-    gap: calc(var(--spacing) * 12);
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+  :where(.space-y-4 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
   }
   :where(.space-y-6 > :not(:last-child)) {
     --tw-space-y-reverse: 0;
     margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
     margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
   }
-  :where(.space-x-8 > :not(:last-child)) {
-    --tw-space-x-reverse: 0;
-    margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
-    margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
+  .gap-y-8 {
+    row-gap: calc(var(--spacing) * 8);
+  }
+  .gap-y-12 {
+    row-gap: calc(var(--spacing) * 12);
   }
   :where(.divide-x > :not(:last-child)) {
     --tw-divide-x-reverse: 0;
@@ -582,14 +597,14 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
-  .py-22 {
-    padding-block: calc(var(--spacing) * 22);
-  }
   .pt-18 {
     padding-top: calc(var(--spacing) * 18);
   }
   .pt-22 {
     padding-top: calc(var(--spacing) * 22);
+  }
+  .pt-32 {
+    padding-top: calc(var(--spacing) * 32);
   }
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
@@ -619,10 +634,6 @@
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
   .text-5xl {
     font-size: var(--text-5xl);
@@ -704,7 +715,15 @@
   .active\:scale-\[98\%\]:active {
     scale: 98%;
   }
+  @media (width >= 40rem) {
+    .sm\:w-1\/2 {
+      width: calc(1 / 2 * 100%);
+    }
+  }
   @media (width >= 48rem) {
+    .md\:mb-24 {
+      margin-bottom: calc(var(--spacing) * 24);
+    }
     .md\:block {
       display: block;
     }
@@ -717,8 +736,14 @@
     .md\:h-\[220\%\] {
       height: 220%;
     }
+    .md\:w-1\/3 {
+      width: calc(1 / 3 * 100%);
+    }
     .md\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .md\:gap-8 {
+      gap: calc(var(--spacing) * 8);
     }
     .md\:gap-12 {
       gap: calc(var(--spacing) * 12);
@@ -737,10 +762,6 @@
     }
   }
   @media (width >= 80rem) {
-    .xl\:text-5xl {
-      font-size: var(--text-5xl);
-      line-height: var(--tw-leading, var(--text-5xl--line-height));
-    }
     .xl\:text-xl {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -889,10 +910,13 @@ body *, body  *::before, body  *::after {
     font-size: 115px;
   }
   .section-title {
-    margin-bottom: calc(var(--spacing) * 12);
+    margin-bottom: calc(var(--spacing) * 9);
     font-family: "Quilon", sans-serif;
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 12);
+    }
   }
   .title {
     font-family: "Quilon", sans-serif;
@@ -1079,11 +1103,6 @@ body *, body  *::before, body  *::after {
   inherits: false;
   initial-value: 0;
 }
-@property --tw-space-x-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
 @property --tw-divide-x-reverse {
   syntax: "*";
   inherits: false;
@@ -1124,7 +1143,6 @@ body *, body  *::before, body  *::after {
       --tw-translate-y: 0;
       --tw-translate-z: 0;
       --tw-space-y-reverse: 0;
-      --tw-space-x-reverse: 0;
       --tw-divide-x-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
