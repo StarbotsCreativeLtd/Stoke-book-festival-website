@@ -154,6 +154,13 @@ body {
     width: 100%;
     height: 100%;
   }
+  
+
+    .hero-left-fan-container-mobile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
 
   .hero-right-fan-container {
     position: relative;

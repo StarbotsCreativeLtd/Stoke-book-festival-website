@@ -79,6 +79,15 @@ for (let i = 0; i < 180; i++) {
   heroLeftCardContainer.appendChild(leaf);
 }
 
+const heroLeftCardContainerMobile = document.querySelector(".hero-left-fan-container-mobile");
+
+for (let i = 0; i < 180; i++) {
+  const leaf = document.createElement("div");
+  leaf.className = `hero-left-ray-line`;
+  leaf.style.setProperty("--i", i);
+  heroLeftCardContainerMobile.appendChild(leaf);
+}
+
 const heroRightCardContainer = document.querySelector(".hero-right-fan-container");
 
 for (let i = 0; i < 72; i++) {
