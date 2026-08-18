@@ -1499,6 +1499,9 @@ body *, body  *::before, body  *::after {
   .building {
     opacity: 0;
   }
+  .building-shadow {
+    opacity: 0;
+  }
   #author-swiper .swiper-pagination-bullet-active {
     background: #9f86be !important;
   }
