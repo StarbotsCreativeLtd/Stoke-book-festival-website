@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
     transformOrigin: "50% 100%",
     transformStyle: "preserve-3d",
     rotateX: 90,
-    opacity:1,
+    opacity: 1,
   });
 
   gsap.set(shadows, {

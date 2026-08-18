@@ -55,7 +55,7 @@
     "price": "£10",
     "audience": "14+",
     "content": "A lively performance by the City of Stoke-on-Trent Symphony Orchestra who will take you on a musical journey inspired by Shakespeare's words that have sparked melodic notes. Enjoy a blend of music, Shakespeare, and a great time with artistic director Joe Hearson.",
-    "image": "./assets/images/event-images/Symphony.jpg",
+    "image": "./assets/images/event-images/symphony.jpg",
     "alt": "Symphony Orchestra image",
     "ticketLink": "https://www.fatsoma.com/"
   },
