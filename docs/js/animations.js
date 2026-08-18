@@ -163,6 +163,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const sbfImage = document.querySelector(".sbf-image");
   const dateDiv = document.querySelector(".date-div");
   const heroCopy = document.querySelector(".hero-copy");
+
+  const rightRay = document.querySelector(".dt-right-fan");
+
   const intro = gsap.timeline();
 
   gsap.set(dateDiv, { y: 100, scale: 0.9 });
@@ -204,6 +207,16 @@ document.addEventListener("DOMContentLoaded", () => {
     "title+=0.10"
   );
 
+  intro.to(
+    rightRay,
+    {
+      opacity: 1,
+      duration: 2.0,
+      ease: "power2.out",
+    },
+    "title+=0.10"
+  );
+
   // --------------------------------------------------
   // Rays + fan container spin — happens FIRST
   // --------------------------------------------------
@@ -231,8 +244,8 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.set(buildings, {
     transformOrigin: "50% 100%",
     transformStyle: "preserve-3d",
-    // opacity: 0,
     rotateX: 90,
+    opacity:1,
   });
 
   gsap.set(shadows, {
@@ -280,7 +293,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // stand up
     tl.to(el, {
-      opacity: 1,
+      // opacity: 1,
       rotateX: 0,
       x: 0,
       scale: cfg.scale,
