@@ -2,6 +2,16 @@ const authorCardsGrid = document.querySelector("#author-cards-grid");
 const workshopCardsGrid = document.querySelector("#workshop-cards-grid");
 const familyCardsGrid = document.querySelector("#family-cards-grid");
 
+const authorSwiperElement = document.querySelector("#author-swiper");
+const workshopSwiperElement = document.querySelector("#workshop-swiper");
+const familySwiperElement = document.querySelector("#family-swiper");
+
+const minsterCardOne = document.querySelector("#minster-card-one");
+const minsterCardTwo = document.querySelector("#minster-card-two");
+
+const libraryCardOne = document.querySelector("#library-card-one");
+const libraryCardTwo = document.querySelector("#library-card-two");
+
 async function loadAuthorEvents() {
   try {
     const response = await fetch("./data/authorEvents.json");
@@ -12,7 +22,7 @@ async function loadAuthorEvents() {
 
     const events = await response.json();
 
-    renderEvents(events, "bg-purple/30", "purple", authorCardsGrid);
+    renderEvents(events, "bg-purple/30", "purple", authorCardsGrid, "authors");
   } catch (error) {
     console.error("Error loading author events:", error);
   }
@@ -28,7 +38,7 @@ async function loadWorkshopEvents() {
 
     const events = await response.json();
 
-    renderEvents(events, "bg-extralight-green", "green", workshopCardsGrid);
+    renderEvents(events, "bg-extralight-green", "green", workshopCardsGrid, "workshops");
   } catch (error) {
     console.error("Error loading workshop events:", error);
   }
@@ -44,29 +54,35 @@ async function loadFamilyEvents() {
 
     const events = await response.json();
 
-    renderEvents(events, "bg-orange/20", "orange", familyCardsGrid);
+    renderEvents(events, "bg-orange/20", "orange", familyCardsGrid, "family");
   } catch (error) {
     console.error("Error loading Family events:", error);
   }
 }
 
-function renderEvents(events, cardBackground, primaryColour, grid) {
-  events.forEach((event) => {
-    const card = document.createElement("div");
+function chunkArrayInGroups(arr, size) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i += size) {
+    newArr.push(arr.slice(i, i + size));
+  }
+  return newArr;
+}
 
-    card.className = `card ${cardBackground}`;
+function renderCard(event, cardBackground, primaryColour, isSwiper) {
+  const card = document.createElement("div");
+  card.className = `card ${cardBackground} ${isSwiper ? "swiper-slide h-auto! flex" : ""}`;
 
-    const colourClasses = {
-      purple: "bg-purple border-purple",
-      yellow: "bg-yellow border-yellow",
-      orange: "bg-orange border-orange",
-      navy: "bg-navy border-navy",
-      green: "bg-green border-green",
-    };
+  const colourClasses = {
+    purple: "bg-purple border-purple",
+    yellow: "bg-yellow border-yellow",
+    orange: "bg-orange border-orange",
+    navy: "bg-navy border-navy",
+    green: "bg-green border-green",
+  };
 
-    const buttonClasses = colourClasses[primaryColour];
+  const buttonClasses = colourClasses[primaryColour];
 
-    card.innerHTML = `
+  card.innerHTML = `
       <!-- Details -->
       <div class="event-details bg-${primaryColour} text-white">
 
@@ -129,111 +145,159 @@ function renderEvents(events, cardBackground, primaryColour, grid) {
       </div>
 
       <!-- Main Card -->
+      <div class="size-full flex flex-col">
 
-      ${
-        event.image
-          ? `
-        <div class="w-full">
-            <img
-            src="${event.image}"
-            alt="${event.alt || event.title}"
-            class="block h-auto w-full object-cover object-center"
-            />
-        </div>
-        `
-          : ""
-      }
-
-      <div class="flex w-full h-full justify-between min-w-0 flex-col p-8">
-        <div class="w-full">
-            <h3 class="title text-${primaryColour}">
-            ${event.title}
-            </h3>
-
-            <p class="body-copy mb-8 font-semibold">
-            ${event.date}
-            </p>
-            ${
-              event.content
-                ? `
-                <p class="body-copy mb-8 line-clamp-2">
-                ${event.content}
-                </p>
-            `
-                : ""
-            }
-
-            <p class="body-copy flex items-center">
-                <span class="text-${primaryColour} flex h-full w-8 items-center justify-center pr-4"
-                    ><svg
-                        class="size-full"
-                        viewBox="0 0 60 93"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                        d="M57.6418 18.8081C56.1307 15.1407 53.9678 11.8475 51.2132 9.01982C48.4586 6.19216 45.2504 3.97191 41.6779 2.42077C37.9782 0.814468 34.0492 0 30 0C25.9508 0 22.0218 0.814468 18.3221 2.42077C14.7496 3.97191 11.5414 6.19216 8.7868 9.01982C6.03218 11.8475 3.8693 15.1407 2.35823 18.8081C0.793426 22.6058 0 26.639 0 30.7956C0 37.7594 4.8437 50.0274 14.3965 67.2587C21.4373 79.9588 28.5738 90.8317 28.645 90.94L30 93L31.355 90.94C31.4262 90.8317 38.5627 79.9588 45.6035 67.2587C55.1563 50.0274 60 37.7594 60 30.7956C60 26.639 59.2066 22.6058 57.6418 18.8081ZM45.7894 29.9637C45.7894 38.9009 38.7063 46.1718 30 46.1718C21.2937 46.1718 14.2106 38.9009 14.2106 29.9637C14.2106 21.0265 21.2937 13.7556 30 13.7556C38.7063 13.7556 45.7894 21.0265 45.7894 29.9637Z"
-                        fill="currentColor"
-                        /></svg></span>
-            ${event.location}
-            </p>
-        </div>
-
-        <div class="mt-6 flex w-full min-w-0 flex-wrap items-center gap-3">
         ${
-          event.content
+          event.image
             ? `
-            <button
-                type="button"
-                class="open-event-details button border-${primaryColour} text-${primaryColour} flex items-center border text-lg xl:text-xl whitespace-nowrap"
-            >
-                Find out more
-
-                <span class="text-${primaryColour} h-4 w-auto pl-4">
-                <svg
-                    class="size-full"
-                    viewBox="0 0 16 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                    d="M0 6.8606L14.0665 6.8606"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    />
-                    <path
-                    d="M10.0676 1.37793C10.0676 1.37793 13.3904 6.69441 15.2734 6.86055C13.3904 7.02669 10.0676 12.3432 10.0676 12.3432"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    />
-                </svg>
-                </span>
-            </button>
-            `
+          <div class="w-full h-fit">
+              <img
+              src="${event.image}"
+              alt="${event.alt || event.title}"
+              class="block h-auto w-full object-cover object-center"
+              />
+          </div>
+          `
             : ""
         }
 
-          <a
-            href="${event.ticketLink || "#"}"
-            class="button ${buttonClasses} border text-lg xl:text-xl text-white"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ${event.cta}
-          </a>
+        <div class="flex w-full grow justify-between min-w-0 flex-col p-8">
+          <div class="w-full">
+              <h3 class="title text-${primaryColour}">
+              ${event.title}
+              </h3>
+
+              <p class="body-copy mb-4 md:mb-8 font-semibold">
+              ${event.date}
+              </p>
+              ${
+                event.content
+                  ? `
+                  <p class="body-copy mb-4 md:mb-8 line-clamp-2">
+                  ${event.content}
+                  </p>
+              `
+                  : ""
+              }
+
+              <p class="body-copy flex items-center">
+                  <span class="text-${primaryColour} flex h-full w-8 items-center justify-center pr-4"
+                      ><svg
+                          class="size-full"
+                          viewBox="0 0 60 93"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                      >
+                          <path
+                          d="M57.6418 18.8081C56.1307 15.1407 53.9678 11.8475 51.2132 9.01982C48.4586 6.19216 45.2504 3.97191 41.6779 2.42077C37.9782 0.814468 34.0492 0 30 0C25.9508 0 22.0218 0.814468 18.3221 2.42077C14.7496 3.97191 11.5414 6.19216 8.7868 9.01982C6.03218 11.8475 3.8693 15.1407 2.35823 18.8081C0.793426 22.6058 0 26.639 0 30.7956C0 37.7594 4.8437 50.0274 14.3965 67.2587C21.4373 79.9588 28.5738 90.8317 28.645 90.94L30 93L31.355 90.94C31.4262 90.8317 38.5627 79.9588 45.6035 67.2587C55.1563 50.0274 60 37.7594 60 30.7956C60 26.639 59.2066 22.6058 57.6418 18.8081ZM45.7894 29.9637C45.7894 38.9009 38.7063 46.1718 30 46.1718C21.2937 46.1718 14.2106 38.9009 14.2106 29.9637C14.2106 21.0265 21.2937 13.7556 30 13.7556C38.7063 13.7556 45.7894 21.0265 45.7894 29.9637Z"
+                          fill="currentColor"
+                          /></svg></span>
+              ${event.location}
+              </p>
+          </div>
+
+          <div class="md:mt-6 mt-4 flex w-full min-w-0 flex-wrap items-center gap-3">
+          ${
+            event.content
+              ? `
+              <button
+                  type="button"
+                  class="open-event-details button border-${primaryColour} text-${primaryColour} flex items-center border text-lg xl:text-xl whitespace-nowrap"
+              >
+                  Find out more
+
+                  <span class="text-${primaryColour} h-4 w-auto pl-4">
+                  <svg
+                      class="size-full"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                  >
+                      <path
+                      d="M0 6.8606L14.0665 6.8606"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      />
+                      <path
+                      d="M10.0676 1.37793C10.0676 1.37793 13.3904 6.69441 15.2734 6.86055C13.3904 7.02669 10.0676 12.3432 10.0676 12.3432"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      />
+                  </svg>
+                  </span>
+              </button>
+              `
+              : ""
+          }
+
+            <a
+              href="${event.ticketLink || "#"}"
+              class="button ${buttonClasses} border text-lg xl:text-xl text-white"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ${event.cta}
+            </a>
+
+          </div>
 
         </div>
-
       </div>
     `;
 
-    grid.appendChild(card);
+  return card;
+}
+
+function renderEvents(events, cardBackground, primaryColour, grid, filler) {
+  const emptySpaces = 3 - (events.length % 3);
+  const chunkedEvents = chunkArrayInGroups(events, 5);
+
+  // MOBILE SWIPERS
+
+  const swiperDiv =
+    filler === "authors"
+      ? authorSwiperElement
+      : filler === "workshops"
+        ? workshopSwiperElement
+        : familySwiperElement;
+  const swiperWrapper = swiperDiv.querySelector(".swiper-wrapper");
+  events.forEach((event) => {
+    const isSwiper = true;
+    const card = renderCard(event, cardBackground, primaryColour, isSwiper);
+    swiperWrapper.append(card);
+  });
+
+  // DESKTOP SLIDES
+  chunkedEvents[0].reverse().forEach((event) => {
+    const card = renderCard(event, cardBackground, primaryColour);
+    grid.prepend(card);
+  });
+  chunkedEvents.slice(1).forEach((array) => {
+    array.forEach((event) => {
+      const card = renderCard(event, cardBackground, primaryColour);
+      grid.append(card);
+    });
+  });
+
+  let fillerDivs = [];
+
+  if (filler === "authors" && emptySpaces < 3) {
+    emptySpaces === 2 ? fillerDivs.push(minsterCardTwo) : fillerDivs(minsterCardOne);
+  }
+
+  if (filler === "workshops") {
+    emptySpaces - 1 === 2 ? fillerDivs.push(libraryCardTwo) : fillerDivs.push(libraryCardOne);
+  }
+
+  fillerDivs.forEach((div) => {
+    div.classList.add("lg:grid");
   });
 }
 
 async function init() {
   await Promise.all([loadAuthorEvents(), loadWorkshopEvents(), loadFamilyEvents()]);
   initialiseEventCards();
+  ScrollTrigger.refresh();
 }
 
 init();

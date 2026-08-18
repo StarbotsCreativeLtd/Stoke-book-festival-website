@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <!-- NATIVE JS -->
-
     <script src="./js/mapEventsCards.js" defer></script>
     <script src="./js/openCloseCardDetails.js" defer></script>
-
     <script src="./js/createFans.js" defer></script>
+    <script src="./js/initialiseSwipers.js" defer></script>
     <script src="./js/animations.js" defer></script>
 
     <!-- GSAP IMPORTS -->
@@ -20,18 +19,250 @@
     <!-- ScrollSmoother requires ScrollTrigger -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollToPlugin.min.js"></script>
+
+    <!-- SWIPER  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </head>
+
   <body class="bg-background text-foreground">
-    <header><div class="endcap-bottom-white absolute bottom-0"></div></header>
+    <header class="absolute inset-0 h-fit w-full overflow-x-clip">
+      <nav
+        class="absolute inset-0 z-50 mx-auto hidden h-fit w-full max-w-7xl items-center justify-between py-4 md:flex"
+      >
+        <div class="h-auto w-[160px]">
+          <img
+            class="h-auto w-full object-contain object-center"
+            src="./assets/images/web-assets/SBF Logo.png"
+          />
+        </div>
+        <div>
+          <ul class="text-navy flex gap-12">
+            <li>
+              <a
+                aria-label="Skip to about Stoke Book festival"
+                href="#about"
+                class="scroll-to-section font-quilon text-xl"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                aria-label="Skip to Events"
+                href="#events-section"
+                class="scroll-to-section font-quilon text-xl"
+                >Events</a
+              >
+            </li>
+            <li>
+              <a
+                aria-label="Skip to more info section"
+                href="#what-to-expect"
+                class="scroll-to-section font-quilon text-xl"
+                >What to expect</a
+              >
+            </li>
+            <li>
+              <a
+                aria-label="Go to tickets page"
+                href="https://https://www.fatsoma.com/p/stoke-book-festival"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-quilon text-xl"
+                >Get Tickets</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main>
-      <div class="flex h-screen w-screen flex-col items-center justify-center overflow-hidden">
-        <h1 class="font-author text-5xl">Stoke Book Festival</h1>
-        <p class="mt-4 text-lg">More info coming soon...</p>
+      <!-- === HERO === -->
+
+      <!-- MOBILE -->
+      <div class="bg-yellow relative overflow-x-clip md:hidden">
+        <!-- ACCENTS -->
+        <div class="endcap-bottom-white absolute bottom-0"></div>
+        <div
+          class="bg-yellow absolute bottom-0 left-0 flex aspect-square w-[250px] -translate-x-1/2 translate-y-1/3 items-center justify-center rounded-full"
+        >
+          <div class="hero-left-fan-container">
+            <div
+              class="bg-yellow absolute top-1/2 left-1/2 z-20 aspect-square w-[80px] -translate-x-1/2 -translate-y-1/2 rounded-full"
+            ></div>
+          </div>
+        </div>
+
+        <!-- BackDrops -->
+        <div class="absolute inset-0 h-[75svh] w-full overflow-hidden">
+          <div class="hero-main-fan-container-mobile"></div>
+        </div>
+        <div class="absolute inset-0 h-[75svh] w-full">
+          <div class="absolute bottom-4 -left-4 w-[75%]">
+            <img class="h-auto w-full" src="./assets/images/buildings/Stoke Library.png" />
+          </div>
+
+          <div class="absolute -right-4 bottom-4 z-5 w-[55%]">
+            <img class="h-auto w-full" src="./assets/images/buildings/Stoke Minster.png" />
+          </div>
+        </div>
+
+        <div class="relative mx-auto flex h-[75svh] w-full max-w-3xl flex-col items-center px-3">
+          <h1 class="sr-only">Stoke Book Festival</h1>
+
+          <div class="mx-auto my-8 flex h-[100px] w-auto">
+            <img
+              class="h-full w-auto object-contain object-center"
+              src="./assets/images/web-assets/SBF Mark.png"
+            />
+          </div>
+          <div class="h-fit w-full pb-12">
+            <img
+              src="./assets/images/web-assets/Stoke Book Festival.png"
+              class="h-auto w-full object-contain object-center"
+            />
+          </div>
+          <div
+            class="font-quilon absolute bottom-0 z-30 flex translate-y-[60%] flex-col items-center justify-center pb-0 text-center text-2xl sm:text-5xl"
+          >
+            <p class="bg-navy w-fit px-4 py-1 text-white">Saturday 3rd - Saturday 10th</p>
+            <p class="bg-navy -mt-1 w-fit px-4 pb-1 text-white">October 2026</p>
+          </div>
+        </div>
+        <div
+          id="about"
+          class="font-author relative z-30 mt-20 w-full space-y-4 px-3 pb-48 text-center text-xl"
+        >
+          <p>
+            Join us for a week of inspiring author talks, creative workshops, performances and
+            community events, bringing readers and writers together from across Stoke-on-Trent and
+            beyond.
+          </p>
+          <p>
+            Stoke-on-Trent is a city built on creativity, craftsmanship and community. This October,
+            we’re bringing those qualities together for the first Stoke-on-Trent Book Festival.
+          </p>
+          <p>
+            We break down barriers to participation by making literature, learning, learning and
+            culture more accessible, championing literacy, inspiring creativity and helping people
+            across the city build confidence and power with words.
+          </p>
+          <p>
+            By bringing together national and local talent, schools, libraries, businesses and
+            communities, our goal is to improve engagement with reading and support youth literacy
+            development in Stoke-on-Trent.
+          </p>
+        </div>
       </div>
 
+      <!-- DESKTOP -->
+      <div class="bg-yellow relative hidden overflow-x-clip md:block">
+        <!-- ACCENTS -->
+        <div class="endcap-bottom-white absolute bottom-0"></div>
+        <div
+          class="bg-yellow absolute bottom-0 left-0 flex aspect-square w-[500px] -translate-x-1/2 translate-y-1/3 items-center justify-center rounded-full"
+        >
+          <div class="hero-left-fan-container">
+            <div
+              class="bg-yellow absolute top-1/2 left-1/2 z-20 aspect-square w-[80px] -translate-x-1/2 -translate-y-1/2 rounded-full"
+            ></div>
+          </div>
+        </div>
+
+        <div
+          class="absolute right-0 bottom-0 hidden aspect-square w-[500px] translate-x-1/2 -translate-y-12 items-center justify-center rounded-full lg:flex"
+        >
+          <div class="hero-right-fan-container">
+            <div
+              class="bg-yellow absolute top-1/2 left-1/2 z-20 aspect-square w-[120px] -translate-x-1/2 -translate-y-1/2 rounded-full"
+            ></div>
+          </div>
+        </div>
+        <!-- BackDrops -->
+        <div class="absolute inset-0 h-[65svh] w-full overflow-hidden">
+          <div class="hero-main-fan-container"></div>
+        </div>
+        <div class="building-scene absolute inset-0 h-[65svh] w-full [perspective:1200px]">
+          <div class="building-wrap absolute bottom-0 left-[-6%] w-[30%]">
+            <div
+              class="building-shadow absolute bottom-0 left-1/2 h-4 w-[80%] -translate-x-1/2 rounded-[50%] bg-black/40 blur-sm"
+            ></div>
+            <img
+              class="building h-auto w-full"
+              src="./assets/images/buildings/Bentilee Library.png"
+            />
+          </div>
+
+          <div class="building-wrap absolute -bottom-4 left-[17%] w-[30%]">
+            <div
+              class="building-shadow absolute bottom-0 left-1/2 h-4 w-[80%] -translate-x-1/2 rounded-[50%] bg-black/40 blur-sm"
+            ></div>
+            <img class="building h-auto w-full" src="./assets/images/buildings/Stoke Minster.png" />
+          </div>
+
+          <div class="building-wrap absolute right-[10%] -bottom-4 z-5 w-[35%]">
+            <div
+              class="building-shadow absolute bottom-0 left-1/2 h-4 w-[80%] -translate-x-1/2 rounded-[50%] bg-black/40 blur-sm"
+            ></div>
+            <img class="building h-auto w-full" src="./assets/images/buildings/Stoke Library.png" />
+          </div>
+
+          <div class="building-wrap absolute right-[-8%] -bottom-3 w-[30%]">
+            <div
+              class="building-shadow absolute bottom-0 left-1/2 h-4 w-[80%] -translate-x-1/2 rounded-[50%] bg-black/40 blur-sm"
+            ></div>
+            <img
+              class="building h-auto w-full"
+              src="./assets/images/buildings/City Central Library.png"
+            />
+          </div>
+        </div>
+
+        <div class="relative mx-auto flex w-full max-w-3xl flex-col items-center px-3 pt-48 pb-32">
+          <h1 class="sr-only">Stoke Book Festival</h1>
+          <div class="sbf-image h-fit w-full scale-0 px-18 pb-24">
+            <img
+              src="./assets/images/web-assets/Stoke Book Festival.png"
+              class="h-auto w-full object-contain object-center"
+            />
+          </div>
+          <div
+            class="date-div section-title flex flex-col items-center justify-center text-center opacity-0"
+          >
+            <p class="bg-navy w-fit px-6 py-1 text-white">Saturday 3rd - Saturday 10th</p>
+            <p class="bg-navy w-fit px-6 pb-1 text-white">October 2026</p>
+          </div>
+          <div
+            id="about"
+            class="hero-copy bg-yellow font-author relative z-30 w-full space-y-6 rounded-3xl p-6 text-center text-2xl opacity-0"
+          >
+            <p>
+              Join us for a week of inspiring author talks, creative workshops, performances and
+              community events, bringing readers and writers together from across Stoke-on-Trent and
+              beyond.
+            </p>
+            <p>
+              Stoke-on-Trent is a city built on creativity, craftsmanship and community. This
+              October, we’re bringing those qualities together for the first Stoke-on-Trent Book
+              Festival.
+            </p>
+            <p>
+              We break down barriers to participation by making literature, learning, learning and
+              culture more accessible, championing literacy, inspiring creativity and helping people
+              across the city build confidence and power with words.
+            </p>
+            <p>
+              By bringing together national and local talent, schools, libraries, businesses and
+              communities, our goal is to improve engagement with reading and support youth literacy
+              development in Stoke-on-Trent.
+            </p>
+          </div>
+        </div>
+      </div>
       <!-- === EVENTS SECTION === -->
       <div
-        class="mx-auto mb-12 flex max-w-7xl flex-row flex-wrap items-center justify-center gap-6 md:mb-24 md:gap-8"
+        id="events-section"
+        class="mx-auto mt-24 mb-12 flex max-w-7xl flex-row flex-wrap items-center justify-center gap-6 md:mb-24 md:gap-8"
       >
         <a
           aria-label="Skip to author Events"
@@ -56,33 +287,166 @@
         </a>
       </div>
       <!-- === AUTHOR EVENTS === -->
-      <section id="author-events" class="mb-22 px-3">
+      <section id="author-events" class="mb-16 px-3 md:mb-22">
         <h2 class="section-title text-purple text-center">Author Events</h2>
-        <div id="author-cards-grid" class="card-grid"></div>
+
+        <div class="lg:hidden">
+          <div id="author-swiper" class="swiper h-auto">
+            <div class="swiper-wrapper pb-12">
+              <!-- Slides -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div id="author-cards-grid" class="card-grid">
+          <!-- MINSTER CARD -->
+          <div
+            id="minster-card-two"
+            aria-hidden
+            class="relative col-span-2 hidden grid-cols-3 overflow-hidden rounded-3xl bg-[#E2DBEB]"
+          >
+            <div
+              class="absolute bottom-0 left-0 aspect-square h-[1750px] origin-center -translate-x-[40%] translate-y-[65%]"
+            >
+              <div class="minster-fan-container"></div>
+            </div>
+            <img
+              class="absolute -bottom-9 left-0 h-[95%] w-auto origin-bottom rotate-3 object-contain object-bottom"
+              src="./assets/images/buildings/Stoke Minster.png"
+            />
+            <div class="relative z-20 col-span-2 col-start-2 size-full pt-[8%] pr-12">
+              <img src="./assets/images/titles/StokeMinster.svg" class="h-auto w-full" />
+            </div>
+          </div>
+
+          <div
+            id="minster-card-one"
+            aria-hidden
+            class="relative hidden overflow-hidden rounded-3xl bg-[#E2DBEB]"
+          >
+            <div
+              class="absolute bottom-0 left-0 aspect-square h-[1750px] origin-center -translate-x-[40%] translate-y-[63%]"
+            >
+              <div class="minster-fan-container"></div>
+            </div>
+            <img
+              class="absolute -bottom-9 left-0 h-[95%] w-auto origin-bottom rotate-3 object-contain object-bottom"
+              src="./assets/images/buildings/Stoke Minster.png"
+            />
+            <div class="flex justify-end">
+              <div class="relative z-20 flex w-[85%] max-w-[85%] px-3 pt-[8%]">
+                <img src="./assets/images/titles/StokeMinster.svg" class="h-auto w-full" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- === WORKSHOP EVENTS === -->
-      <section id="workshop-events" class="mb-22 px-3">
+      <section id="workshop-events" class="mb-16 px-3 md:mb-22">
         <h2 class="section-title text-green text-center">Workshops & Events</h2>
-        <div id="workshop-cards-grid" class="card-grid"></div>
+
+        <div class="lg:hidden">
+          <div id="workshop-swiper" class="swiper h-auto">
+            <div class="swiper-wrapper pb-12">
+              <!-- Slides -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div id="workshop-cards-grid" class="card-grid">
+          <!-- Central LIBRARY CARD -->
+          <div
+            id="central-library-card-one"
+            aria-hidden
+            class="bg-green relative hidden overflow-hidden rounded-3xl lg:block"
+          >
+            <div
+              class="absolute bottom-0 left-1/2 aspect-square h-[1750px] origin-center -translate-x-1/2 translate-y-[63%]"
+            >
+              <div class="central-library-fan-container"></div>
+            </div>
+            <div class="absolute -bottom-5 left-0 h-1/2 w-full rotate-1">
+              <img
+                class="h-full w-auto origin-bottom object-cover object-bottom"
+                src="./assets/images/buildings/City Central Library.png"
+              />
+            </div>
+            <div class="flex justify-end">
+              <div class="relative z-20 flex w-full px-3 pt-[10%]">
+                <img src="./assets/images/titles/City Central Library.svg" class="h-auto w-full" />
+              </div>
+            </div>
+          </div>
+          <!-- LIBRARY CARD -->
+          <div
+            id="library-card-two"
+            aria-hidden
+            class="bg-extralight-green relative col-span-2 hidden overflow-hidden rounded-3xl"
+          >
+            <div
+              class="absolute right-0 bottom-0 aspect-square h-[1750px] origin-center translate-x-[40%] translate-y-[55%]"
+            >
+              <div class="library-fan-container"></div>
+            </div>
+
+            <div class="relative z-20 size-full px-4 pt-8 xl:px-8">
+              <img src="./assets/images/titles/Stoke Library.svg" class="h-auto w-full" />
+            </div>
+            <div class="absolute right-[-15%] bottom-0 z-20 h-[96%] w-auto overflow-visible">
+              <img
+                class="size-full origin-bottom object-cover object-bottom"
+                src="./assets/images/buildings/Stoke Library.png"
+              />
+            </div>
+          </div>
+
+          <div
+            id="library-card-one"
+            aria-hidden
+            class="bg-extralight-green relative hidden overflow-hidden rounded-3xl"
+          >
+            <div
+              class="absolute bottom-0 left-0 aspect-square h-[1750px] origin-center -translate-x-[40%] translate-y-[63%]"
+            >
+              <div class="library-fan-container"></div>
+            </div>
+            <img
+              class="absolute -bottom-9 left-0 h-[95%] w-auto origin-bottom rotate-3 object-contain object-bottom"
+              src="./assets/images/buildings/Stoke Minster.png"
+            />
+            <div class="flex justify-end">
+              <div class="relative z-20 flex w-[85%] max-w-[85%] px-3 pt-[8%]">
+                <img src="./assets/images/titles/StokeMinster.svg" class="h-auto w-full" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- === FAMILY EVENTS === -->
-      <section id="family-events" class="mb-22 px-3">
+      <section id="family-events" class="mb-16 px-3 md:mb-22">
         <h2 class="section-title text-orange text-center">Family Events</h2>
+        <div class="lg:hidden">
+          <div id="family-swiper" class="swiper h-auto">
+            <div class="swiper-wrapper pb-12">
+              <!-- Slides -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
         <div id="family-cards-grid" class="card-grid"></div>
       </section>
 
-      <!-- <section>
-        <div class="h-[300px] aspect-square"><div class="left-card-fan-container"></div></div>
-        
-        
-      </section> -->
+      <!-- === WHAT TO EXPECT === -->
 
       <section id="what-to-expect">
         <div class="bg-navy relative pb-22">
           <div class="endcap-top-white absolute"></div>
           <div
+            id="what-to-expect-content"
             class="mx-auto flex w-full max-w-7xl flex-col items-center justify-center pt-32 text-white"
           >
             <h2 class="section-title text-center">What to Expect</h2>
@@ -90,36 +454,57 @@
               We’re delighted that Stoke Minster will be hosting this festival with support from
               Stoke-on-Trent Libraries and the National Literacy Trust. 
             </p>
-            <div class="mt-18 mx-auto mx-w-2xl flex flex-wrap items-center gap-y-8 justify-center">
-              <div class="part w-full sm:w-1/2 md:w-1/3 flex flex-col items-center justify-center space-y-4 ">
+            <div class="mx-w-2xl mx-auto mt-18 flex flex-wrap items-center justify-center gap-y-12">
+              <div
+                class="part flex w-full flex-col items-center justify-center space-y-4 sm:w-1/2 md:w-1/3"
+              >
                 <div class="aspect-square size-32">
                   <img src="./assets//images/numbers/Frame 1.svg" class="size-full" />
                 </div>
-                <p class="body-copy text-center max-w-[280px]">Inspiring talks and conversations with local and national authors</p>
+                <p class="body-copy max-w-[280px] text-center">
+                  Inspiring talks and conversations with local and national authors
+                </p>
               </div>
-              <div class="part w-full sm:w-1/2 md:w-1/3 flex flex-col items-center justify-center space-y-4 ">
+              <div
+                class="part flex w-full flex-col items-center justify-center space-y-4 sm:w-1/2 md:w-1/3"
+              >
                 <div class="aspect-square size-32">
                   <img src="./assets//images/numbers/Frame 2.svg" class="size-full" />
                 </div>
-                <p class="body-copy text-center max-w-[280px]">Inspiring talks and conversations with local and national authors</p>
+                <p class="body-copy max-w-[280px] text-center">
+                  Opportunities to discover new books, writers and ideas
+                </p>
               </div>
-              <div class="part w-full sm:w-1/2 md:w-1/3 flex flex-col items-center justify-center space-y-4 ">
+              <div
+                class="part flex w-full flex-col items-center justify-center space-y-4 sm:w-1/2 md:w-1/3"
+              >
                 <div class="aspect-square size-32">
                   <img src="./assets//images/numbers/Frame 3.svg" class="size-full" />
                 </div>
-                <p class="body-copy text-center max-w-[280px]">Inspiring talks and conversations with local and national authors</p>
+                <p class="body-copy max-w-[280px] text-center">
+                  Creative and interactive workshops
+                </p>
               </div>
-              <div class="part w-full sm:w-1/2 md:w-1/3 flex flex-col items-center justify-center space-y-4 ">
+              <div
+                class="part flex w-full flex-col items-center justify-center space-y-4 sm:w-1/2 md:w-1/3"
+              >
                 <div class="aspect-square size-32">
                   <img src="./assets//images/numbers/Frame 4.svg" class="size-full" />
                 </div>
-                <p class="body-copy text-center max-w-[280px]">Inspiring talks and conversations with local and national authors</p>
+                <p class="body-copy max-w-[280px] text-center">
+                  Events for readers of all ages and interests
+                </p>
               </div>
-              <div class="part w-full sm:w-1/2 md:w-1/3 flex flex-col items-center justify-center space-y-4 ">
+              <div
+                class="part flex w-full flex-col items-center justify-center space-y-4 sm:w-1/2 md:w-1/3"
+              >
                 <div class="aspect-square size-32">
                   <img src="./assets//images/numbers/Frame 5.svg" class="size-full" />
                 </div>
-                <p class="body-copy text-center max-w-[280px]">Inspiring talks and conversations with local and national authors</p>
+                <p class="body-copy max-w-[280px] text-center">
+                  Contributions from independent businesses and community organisations across
+                  Stoke-on-Trent
+                </p>
               </div>
             </div>
           </div>
@@ -128,7 +513,10 @@
 
           <!-- MOBILE -->
 
-          <div class="mx-auto flex w-full max-w-xl flex-col mt-12 p-6 md:hidden">
+          <div
+            class="mx-auto mt-12 flex w-full max-w-xl flex-col p-6 md:hidden"
+            id="be-part-mobile"
+          >
             <img
               src="./assets//images/buildings/mobileBePart.png"
               class="h-auto w-full object-contain object-bottom"
@@ -141,7 +529,7 @@
                   to attend.
                 </p>
                 <div class="z-100 flex">
-                  <a href="fatsoma.co.uk" class="button bg-light-blue text-xl text-white"
+                  <a href="https://www.fatsoma.com/p/stoke-book-festival" class="button bg-light-blue text-xl text-white"
                     >Book your place today</a
                   >
                 </div>
@@ -150,7 +538,7 @@
           </div>
 
           <!-- DESKTOP -->
-          <div class="mt-22 hidden w-full px-3 md:block">
+          <div class="mt-22 hidden w-full px-3 md:block" id="be-part">
             <div class="relative mx-auto w-full max-w-6xl overflow-hidden pt-22">
               <!-- IMAGE OVERLAY GRID -->
               <div
@@ -186,7 +574,7 @@
                     like to attend.
                   </p>
                   <div class="z-100 flex">
-                    <a href="fatsoma.co.uk" class="button bg-light-blue text-2xl text-white"
+                    <a href="https://www.fatsoma.com/p/stoke-book-festival" class="button bg-light-blue text-2xl text-white"
                       >Book your place today</a
                     >
                   </div>
@@ -202,8 +590,8 @@
     <section
       class="bg-light-blue flex w-full flex-col items-center justify-center px-6 py-16 md:py-22"
     >
-      <h2 class="section-title text-navy text-center">Our Part ners</h2>
-      <div class="flex flex-wrap items-center justify-center gap-6 md:gap-12">
+      <h2 class="section-title text-navy text-center">Our Partners</h2>
+      <div id="partner-logos" class="flex flex-wrap items-center justify-center gap-6 md:gap-12">
         <img
           src="./assets/images/partners-images/National year of reading 2026 logo.png"
           class="h-[80px] w-auto md:h-[150px]"

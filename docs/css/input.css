@@ -40,30 +40,26 @@ body {
     @apply font-quilon mb-9 text-5xl md:mb-12;
   }
   .title {
-    @apply font-quilon text-5xl font-light;
+    @apply font-quilon text-3xl font-light md:text-5xl;
   }
   .body-copy {
     @apply font-author text-xl font-extralight xl:text-2xl;
   }
 
   .button {
-    @apply font-quilon rounded-full px-6 py-4 whitespace-nowrap transition-all duration-100 hover:scale-[102%] active:scale-[98%];
+    @apply font-quilon rounded-full px-4 py-2 whitespace-nowrap transition-all duration-100 hover:scale-[102%] active:scale-[98%] md:px-6 md:py-4;
   }
 
   .card-grid {
-    @apply mx-auto grid max-w-screen-2xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:gap-8;
+    @apply mx-auto hidden max-w-screen-2xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid lg:grid-cols-3 xl:gap-8;
   }
 
   .card {
-    @apply relative col-span-1 flex size-full flex-col items-center overflow-hidden rounded-4xl;
+    @apply relative col-span-1 flex size-full flex-col items-center overflow-hidden rounded-3xl;
   }
 
   .event-details {
     @apply absolute inset-0 z-10 flex size-full translate-y-full flex-col items-start justify-between overflow-y-scroll px-8 pt-16 pb-8 transition-transform duration-300;
-  }
-
-  .double-card {
-    @apply col-span-2 size-full rounded-4xl;
   }
 
   .endcap-top-white {
@@ -78,6 +74,7 @@ body {
     clip-path: shape(from 100% 0, curve to 0 50% with 50% 80%, line to 0 0);
     @apply bg-navy -my-[1px] h-[50px] w-full;
   }
+
   .endcap-bottom-white {
     clip-path: shape(
       from 0 100%,
@@ -86,6 +83,16 @@ body {
       line to 100% 100%
     );
     @apply -my-[1px] h-[50px] w-full bg-white;
+  }
+
+  .endcap-bottom-yellow {
+    clip-path: shape(
+      from 0 100%,
+
+      curve to 100% 50% with 60% -10%,
+      line to 100% 100%
+    );
+    @apply bg-yellow -my-[1px] h-[50px] w-full;
   }
 
   .footer-fan-container {
@@ -107,6 +114,48 @@ body {
   }
 
   .right-card-fan-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .minster-fan-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .central-library-fan-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .library-fan-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-main-fan-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-main-fan-container-mobile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-left-fan-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-right-fan-container {
     position: relative;
     width: 100%;
     height: 100%;
@@ -136,5 +185,81 @@ body {
     height: 100%;
     transform: rotate(calc(var(--i) * 5deg));
     @apply bg-purple top-0 left-1/2;
+  }
+
+  .minster-ray-line {
+    position: absolute;
+    width: 13px;
+    height: 100%;
+    transform: rotate(calc(var(--i) * 3deg));
+    @apply bg-purple top-0 left-1/2;
+  }
+
+  .central-ray-line {
+    position: absolute;
+    width: 13px;
+    height: 100%;
+    transform: rotate(calc(var(--i) * 3deg));
+    @apply bg-extralight-green top-0 left-1/2;
+  }
+
+  .library-ray-line {
+    position: absolute;
+    width: 13px;
+    height: 100%;
+    transform: rotate(calc(var(--i) * 3deg));
+    @apply bg-green top-0 left-1/2;
+  }
+
+  .hero-ray-line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 6px;
+    height: 0px;
+    transform: translateX(-50%) translateY(50%) rotate(calc(var(--i) * 3deg));
+    @apply bg-extralight-yellow/40;
+  }
+
+  .hero-ray-line-mobile {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 6px;
+    height: 1500px;
+    transform: translateX(-50%) translateY(50%) rotate(calc(var(--i) * 3deg));
+    @apply bg-extralight-yellow/40;
+  }
+
+  .hero-left-ray-line {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 2px;
+    height: 85%;
+    transform: translateX(-50%) translateY(50%) rotate(calc(var(--i) * 3deg));
+    @apply bg-orange;
+  }
+
+  .hero-right-ray-line {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 8px;
+    height: 100%;
+    transform: translateX(-50%) translateY(50%) rotate(calc(var(--i) * 6deg));
+    @apply bg-orange;
+  }
+
+  #author-swiper .swiper-pagination-bullet-active {
+    background: #9f86be !important;
+  }
+
+  #workshop-swiper .swiper-pagination-bullet-active {
+    background: #4a7956 !important;
+  }
+
+  #family-swiper .swiper-pagination-bullet-active {
+    background: #ee7b43 !important;
   }
 }
