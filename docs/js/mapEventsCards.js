@@ -117,16 +117,16 @@ function renderCard(event, cardBackground, primaryColour, isSwiper) {
           </p>
 
         
-          <p class="body-copy flex items-center text-white mb-4">
+          <p class="body-copy flex items-center text-white mb-3">
             <span class="font-semibold pr-4">Location:</span>${event.location}
           </p>
 
-          <p class="body-copy flex items-center text-white mb-4">
+          <p class="body-copy flex items-center text-white mb-3">
             <span class="font-semibold pr-4">Price:</span>${event.price}
           </p>
 
 
-          <p class="body-copy flex items-center text-white mb-4">
+          <p class="body-copy flex items-center text-white mb-3">
             <span class="font-semibold pr-4">Audience:</span>${event.audience}
           </p>
           
