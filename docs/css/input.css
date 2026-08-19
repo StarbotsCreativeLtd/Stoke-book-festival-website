@@ -137,6 +137,12 @@ body {
     height: 100%;
   }
 
+    .library-fan-container-mobile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
   .hero-main-fan-container {
     position: relative;
     width: 100%;

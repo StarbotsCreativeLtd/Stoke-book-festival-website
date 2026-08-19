@@ -70,6 +70,15 @@ for (let i = 0; i < 72; i++) {
   libraryCardContainer.appendChild(leaf);
 }
 
+const libraryCardContainerMobile = document.querySelector(".library-fan-container-mobile");
+
+for (let i = 0; i < 72; i++) {
+  const leaf = document.createElement("div");
+  leaf.className = `library-ray-line`;
+  leaf.style.setProperty("--i", i);
+  libraryCardContainerMobile.appendChild(leaf);
+}
+
 const heroLeftCardContainer = document.querySelector(".hero-left-fan-container");
 
 for (let i = 0; i < 180; i++) {

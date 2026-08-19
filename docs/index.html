@@ -70,7 +70,7 @@
   <body class="bg-background text-foreground">
     <header class="absolute inset-0 h-fit w-full overflow-x-clip">
       <nav
-        class="absolute inset-0 z-50 mx-auto hidden h-fit w-full max-w-7xl items-center justify-between py-4 md:flex"
+        class="nav-bar absolute inset-0 z-50 mx-auto hidden h-fit w-full max-w-7xl items-center justify-between py-4 opacity-0 md:flex"
       >
         <div class="h-auto w-[160px]">
           <img
@@ -453,18 +453,18 @@
             class="bg-extralight-green relative hidden overflow-hidden rounded-3xl"
           >
             <div
-              class="absolute bottom-0 left-0 aspect-square h-[1750px] origin-center -translate-x-[40%] translate-y-[63%]"
+              class="absolute top-0 left-0 aspect-square h-[1750px] origin-center translate-x-[-10%]"
             >
-              <div class="library-fan-container"></div>
+              <div class="library-fan-container-mobile"></div>
             </div>
-            <img
-              class="absolute -bottom-9 left-0 h-[95%] w-auto origin-bottom rotate-3 object-contain object-bottom"
-              src="./assets/images/buildings/Stoke Minster.png"
-            />
-            <div class="flex justify-end">
-              <div class="relative z-20 flex w-[85%] max-w-[85%] px-3 pt-[8%]">
-                <img src="./assets/images/titles/StokeMinster.svg" class="h-auto w-full" />
-              </div>
+            <div class="relative z-20 size-full px-4 pt-8 xl:px-8">
+              <img src="./assets/images/titles/StokeLibMobile.svg" class="h-auto w-full" />
+            </div>
+            <div class="absolute right-[-12%] -bottom-8 z-20 h-[80%] w-auto overflow-visible">
+              <img
+                class="size-full origin-bottom object-cover object-bottom"
+                src="./assets/images/buildings/Stoke Library.png"
+              />
             </div>
           </div>
         </div>

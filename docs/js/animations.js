@@ -126,6 +126,19 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  gsap.to(".library-fan-container-mobile", {
+    rotate: -8,
+    // transformOrigin: "50% 130%",
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".library-fan-container-mobile",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true,
+      invalidateOnRefresh: true,
+    },
+  });
+
   gsap.to(".hero-right-fan-container", {
     rotate: 12,
     // transformOrigin: "50% 130%",
@@ -163,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sbfImage = document.querySelector(".sbf-image");
   const dateDiv = document.querySelector(".date-div");
   const heroCopy = document.querySelector(".hero-copy");
-
+  const navBar = document.querySelector(".nav-bar");
   const rightRay = document.querySelector(".dt-right-fan");
 
   const intro = gsap.timeline();
@@ -209,6 +222,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   intro.to(
     rightRay,
+    {
+      opacity: 1,
+      duration: 2.0,
+      ease: "power2.out",
+    },
+    "title+=0.10"
+  );
+
+  intro.to(
+    navBar,
     {
       opacity: 1,
       duration: 2.0,
