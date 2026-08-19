@@ -123,6 +123,10 @@ function renderCard(event, cardBackground, primaryColour, isSwiper) {
           </p>
         </div>
 
+        ${
+            event.ticketLink !== ""
+              ? `
+
         <a
           href="${event.ticketLink || "#"}"
           class="button text-${primaryColour} mt-6 flex w-full items-center justify-center bg-white text-center text-2xl"
@@ -130,7 +134,9 @@ function renderCard(event, cardBackground, primaryColour, isSwiper) {
           rel="noopener noreferrer"
         >
           ${event.cta}
-        </a>
+        </a> `
+              : ""
+          }
 
       </div>
 
