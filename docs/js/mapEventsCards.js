@@ -220,6 +220,9 @@ function renderCard(event, cardBackground, primaryColour, isSwiper) {
               : ""
           }
 
+          ${
+            event.ticketLink !== ""
+              ? `
             <a
               href="${event.ticketLink || "#"}"
               class="button ${buttonClasses} border text-lg xl:text-xl text-white"
@@ -228,7 +231,10 @@ function renderCard(event, cardBackground, primaryColour, isSwiper) {
             >
               ${event.cta}
             </a>
-
+            `
+              : ""
+          }
+            
           </div>
 
         </div>

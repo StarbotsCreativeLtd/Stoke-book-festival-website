@@ -9,7 +9,7 @@
     "content": "Let professional storyteller Pyn Stockman guide you on an extraordinary storytelling journey while you brew your own ‘StoryTea’ in a Staffordshire-made cup. As you listen to the story, ingredients mentioned throughout the book will become part of your unique story tea, which you can enjoy while sitting back and relaxing to the audible tale.",
     "image": "./assets/images/event-images/StoryTea.jpg",
     "alt": "Story Tea Image",
-    "ticketLink": "https://www.fatsoma.com/"
+    "ticketLink": "https://fatso.ma/fpc2g"
   },
   {
     "title": "Stoke Book Club: Book Chat",
@@ -21,7 +21,7 @@
     "content": "No book festival is complete without launching a new book club. Join the Stoke Book Festival’s Book Club and begin your journey into books.",
     "image": "./assets/images/event-images/BookChat.jpg",
     "alt": "Book Chat image",
-    "ticketLink": "https://www.fatsoma.com/"
+    "ticketLink": ""
   },
 
   {
@@ -34,7 +34,7 @@
     "content": "Enjoy a stunning performance by the City of Stoke-on-Trent Symphony Orchestra and vocalist Jordan Harding. They will take you on a musical journey through English song and stories linked to famous authors, poets, and composers, including some new discoveries. The concert begins at 7 pm, but arrive by 6:15pm for a pre-concert talk with Artistic Director Joe Hearson, who will introduce the evening and discuss the music's inspiration from poems and words.",
     "image": "./assets/images/event-images/symphony.jpg",
     "alt": "Symphony Orchestra image",
-    "ticketLink": "https://www.fatsoma.com/"
+    "ticketLink": "https://fatso.ma/fpc2b"
   },
   {
     "title": "Take 10 to Read",
@@ -61,27 +61,15 @@
     "ticketLink": "https://maps.app.goo.gl/D5FWXcw1T9p8Ekxy7"
   },
   {
-    "title": "Local author networking event",
-    "date": "Saturday 10 October 12pm - 1pm",
+    "title": "Local Author networking and Publishing Panel",
+    "date": "Saturday 10 October 12pm - 2pm",
     "location": "Stoke Minster",
-    "cta": "Drop In",
+    "cta": "Reserve Now",
     "price": "Free",
     "audience": "16+",
     "content": "Are you an author or writer based in North Staffordshire? The Stoke Book Festival is hosting a mixer event where you can meet fellow local writers, receive advice and tips from publishers and published authors. Join us for refreshments and conversation to support your writing journey.",
     "image": "./assets/images/event-images/AuthorMixer.jpg",
     "alt": "Author Mixer image",
-    "ticketLink": "https://maps.app.goo.gl/RuhovMRwdvpN7EMH8"
-  },
-  {
-    "title": "Local Author Publishing Pannel",
-    "date": "Saturday 10 October 1pm - 2pm",
-    "location": "Stoke Minster",
-    "cta": "Reserve Now",
-    "price": "Free",
-    "audience": "16+",
-    "content": "TBC",
-    "image": "./assets/images/event-images/Panel.jpg",
-    "alt": "Author Panel",
-    "ticketLink": "https://www.fatsoma.com/"
+    "ticketLink": "https://fatso.ma/fpc2p"
   }
 ]

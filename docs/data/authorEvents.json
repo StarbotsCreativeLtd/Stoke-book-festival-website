@@ -9,7 +9,7 @@
     "content": "Helena Attlee is an author and journalist specialising in gardens and their history. Her love of Italy and travel has inspired her work; her latest book, The Fire in the Mountain: Sicily, Etna, and Her People, published in April this year, narrates her experience of spending a season in a village on the slopes of Mount Etna, Europe’s largest and most active volcano, and explores the stories of the people and landscapes she encountered.",
     "image": "./assets/images/event-images/Helena.jpg",
     "alt": "Helena Attlee",
-    "ticketLink": "https://www.fatsoma.com/"
+    "ticketLink": "https://fatso.ma/fp65l"
   },
   {
     "title": "Book Club with Author: Jess Kidd",
@@ -21,7 +21,7 @@
     "content": "Have you read Jess Kidd's latest books? Join our special Book Club author event during the festival, where you can ask the author directly your usual book club questions! To make the most of the event, consider reading one of Jess Kidd's novels beforehand. Alternatively, just come to discover what a book club is all about and to hear Jess discuss the ideas behind her creative vision. Included in the ticket price is a copy of Jess Kidd's latest book.",
     "image": "./assets/images/event-images/JessKidd.jpg",
     "alt": "Jess Kidd",
-    "ticketLink": "https://www.fatsoma.com/"
+    "ticketLink": "https://fatso.ma/fpckp"
   },
   {
     "title": "Festival Exclusive Book Launch | Dave Proudlove",
@@ -33,7 +33,7 @@
     "content": "Dave Proudlove is a writer and journalist whose weekly column in The Sentinel ran for more than ten years. He is the author of five books, with his latest, Street Football: The Real Grassroots of the Beautiful Game, launching exclusively at the Stoke Book Festival as a free event. Join Dave for a discussion on his latest book, footballing insights and Q&A around the beautiful game. The real question is: can you do it on a cold Tuesday night in Stoke?",
     "image": "./assets/images/event-images/Proudlove.jpg",
     "alt": "Dave Proudlove",
-    "ticketLink": "https://www.fatsoma.com/"
+    "ticketLink": "https://fatso.ma/fpckb"
   },
   {
     "title": "Mel Sherratt",
@@ -45,10 +45,10 @@
     "content": "Join local Stoke-on-Trent author Mel Sheratt in conversation with Festival Director Simon Drakeford. Mel has worked a variety of jobs in her hometown – bank teller, housing officer, and training and development consultant, to name a few – but she has always been a writer at heart. There isn’t a day that goes by where she doesn’t have a pen in her hand and a book to read nearby. She now writes crime fiction and psychological suspense across multiple series and has sold over two million books. Shortlisted for the prestigious CWA (Crime Writers' Association) Dagger in the Library Award, she has recently published her twenty-sixth novel. Readers say her writing takes you to the heart of the crime – dark fiction with an emotional pull. Mel also writes emotional and heartwarming fiction under the pen name of Marcie Steele.",
     "image": "./assets/images/event-images/MelSherratt.jpg",
     "alt": "Mel Sherratt",
-    "ticketLink": "https://www.fatsoma.com/"
+    "ticketLink": "https://fatso.ma/fpck8"
   },
   {
-    "title": "Verity Babbs 'Funny Bits'",
+    "title": "Verity Babbs",
     "date": "Thursday 8 October 7pm",
     "location": "Stoke Minster",
     "cta": "Buy Tickets",
@@ -57,11 +57,11 @@
     "content": "Verity Babbs is an art historian, comedian, and presenter; she is a passionate advocate of Stoke-on-Trent's impressive ceramic heritage. As the founder of ‘Art Laughs Comedy,’ she skilfully makes art history accessible and engaging and most importantly, funny! Her stage act for the Stoke Book Festival blends stand-up comedy with discussions, all inspired by her book Art History in One Sentence.",
     "image": "./assets/images/event-images/VerityBabbs.jpg",
     "alt": "Verity Babbs",
-    "ticketLink": "https://www.fatsoma.com/"
+    "ticketLink": "https://fatso.ma/fpckc"
   },
   {
     "title": "AJ West",
-    "date": "Saturday 10 October 3pm",
+    "date": "Saturday 10 October 6pm",
     "location": "Stoke Minster",
     "cta": "Buy Tickets",
     "price": "£10",
@@ -69,6 +69,6 @@
     "content": "AJ West, a Sunday Times bestseller and winner of the Historical Dagger Award for The Betrayal of Thomas True, is a former BBC journalist and broadcaster. His upcoming book, The Deadly Inheritance of Everest Macdonald, scheduled for release in October 2026, promises a dark, atmospheric historical mystery. AJ also advocates for LGBTQ+ rights; his non-fiction work How Queer Bookshops Changed the World celebrates the courage and sanctuary of LGBTQ+ bookstores. Join AJ West at Stoke Book Festival’s closing event, where in conversation with [XX] will discuss his latest novel and share insights into his publishing journey and advocacy work.",
     "image": "./assets/images/event-images/AJWest.jpg",
     "alt": "Aj West",
-    "ticketLink": "https://www.fatsoma.com/"
+    "ticketLink": "https://fatso.ma/fpckt"
   }
 ]
