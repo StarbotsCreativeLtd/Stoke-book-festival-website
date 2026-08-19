@@ -12,7 +12,6 @@ const minsterCardTwo = document.querySelector("#minster-card-two");
 const libraryCardOne = document.querySelector("#library-card-one");
 const libraryCardTwo = document.querySelector("#library-card-two");
 
-
 async function loadAuthorEvents() {
   try {
     const response = await fetch("./data/authorEvents.json");
@@ -199,7 +198,7 @@ function renderCard(event, cardBackground, primaryColour, isSwiper) {
 
                   <span class="text-${primaryColour} h-4 w-fit pl-3">
                   <svg
-                      class="size-full"
+                      class="h-full"
                       viewBox="0 0 16 14"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
