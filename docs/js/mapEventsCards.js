@@ -12,6 +12,7 @@ const minsterCardTwo = document.querySelector("#minster-card-two");
 const libraryCardOne = document.querySelector("#library-card-one");
 const libraryCardTwo = document.querySelector("#library-card-two");
 
+
 async function loadAuthorEvents() {
   try {
     const response = await fetch("./data/authorEvents.json");
@@ -105,33 +106,22 @@ function renderCard(event, cardBackground, primaryColour, isSwiper) {
         </button>
 
         <div class="flex flex-col">
-
           <p class="title">${event.title}</p>
-
           <p class="body-copy mb-8 text-xl font-semibold">
             ${event.date}
           </p>
-
           <p class="body-copy mb-8">
             ${event.content}
           </p>
-
-        
           <p class="body-copy flex items-center text-white mb-3">
             <span class="font-semibold pr-4">Location:</span>${event.location}
           </p>
-
           <p class="body-copy flex items-center text-white mb-3">
             <span class="font-semibold pr-4">Price:</span>${event.price}
           </p>
-
-
           <p class="body-copy flex items-center text-white mb-3">
             <span class="font-semibold pr-4">Audience:</span>${event.audience}
           </p>
-          
-          
-        
         </div>
 
         <a
@@ -207,7 +197,7 @@ function renderCard(event, cardBackground, primaryColour, isSwiper) {
               >
                   Find out more
 
-                  <span class="text-${primaryColour} h-4 w-auto pl-4">
+                  <span class="text-${primaryColour} h-4 w-fit pl-3">
                   <svg
                       class="size-full"
                       viewBox="0 0 16 14"
