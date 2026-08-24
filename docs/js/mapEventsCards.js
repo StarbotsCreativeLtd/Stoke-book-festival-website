@@ -252,7 +252,7 @@ function renderCard(event, cardBackground, primaryColour, isSwiper) {
 
 function renderEvents(events, cardBackground, primaryColour, grid, filler) {
   const emptySpaces = 3 - (events.length % 3);
-  const chunkedEvents = chunkArrayInGroups(events, 5);
+  const chunkedEvents = filler === "authors" ? [events] :  chunkArrayInGroups(events, 5);
 
   // MOBILE SWIPERS
 
