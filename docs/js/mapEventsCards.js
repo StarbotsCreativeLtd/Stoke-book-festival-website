@@ -124,8 +124,8 @@ function renderCard(event, cardBackground, primaryColour, isSwiper) {
         </div>
 
         ${
-            event.ticketLink !== ""
-              ? `
+          event.ticketLink !== ""
+            ? `
 
         <a
           href="${event.ticketLink || "#"}"
@@ -135,8 +135,8 @@ function renderCard(event, cardBackground, primaryColour, isSwiper) {
         >
           ${event.cta}
         </a> `
-              : ""
-          }
+            : ""
+        }
 
       </div>
 
@@ -252,7 +252,7 @@ function renderCard(event, cardBackground, primaryColour, isSwiper) {
 
 function renderEvents(events, cardBackground, primaryColour, grid, filler) {
   const emptySpaces = 3 - (events.length % 3);
-  const chunkedEvents = filler === "authors" ? [events] :  chunkArrayInGroups(events, 5);
+  const chunkedEvents = filler === "authors" ? [events] : chunkArrayInGroups(events, 5);
 
   // MOBILE SWIPERS
 
@@ -302,4 +302,4 @@ async function init() {
   ScrollTrigger.refresh();
 }
 
-init();
+window.eventsReady = init();

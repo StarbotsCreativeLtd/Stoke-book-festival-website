@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
-  ScrollToPlugin.config({ autoKill: true });
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+  ScrollToPlugin.config();
 
   function scrollToDiv(div) {
     gsap.to(window, {
@@ -14,9 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   document.querySelectorAll(".scroll-to-section").forEach((link) => {
-    link.addEventListener("click", (event) => {
+    link.addEventListener("click", async (event) => {
       event.preventDefault();
       const target = link.getAttribute("href");
+
+      if (window.eventsReady) {
+        await window.eventsReady; // wait for cards to be in the DOM
+      }
+
       scrollToDiv(target);
     });
   });
