@@ -6,7 +6,7 @@
     "cta": "Reserve Now",
     "price": "£5",
     "audience": "14+",
-    "content": "Let professional storyteller Pyn Stockman guide you on an extraordinary storytelling journey while you brew your own ‘StoryTea’ in a Staffordshire-made cup. As you listen to the story, ingredients mentioned throughout the book will become part of your unique story tea, which you can enjoy while sitting back and relaxing to the audible tale.",
+    "content": "Let professional storyteller Pyn Stockman guide you on an extraordinary storytelling journey from the comfort of the library. Pyn will wrap you up in beautiful tales crafted from British myth, legend and folklore, whilst you brew your own ‘story tea’ in fine china teapots guided by master herbalist, Arlene Burnett. These tales are magical, mesmerising and often have a dark twist – making it a perfect story mix. You’ll find elements from the stories shared this evening may make their way into your own unique story tea which you can sip and enjoy while sitting back and relaxing along with this masterful performance.",
     "image": "./assets/images/event-images/StoryTea.jpg",
     "alt": "Story Tea Image",
     "ticketLink": "https://fatso.ma/fpc2g"
@@ -36,6 +36,18 @@
     "alt": "Symphony Orchestra image",
     "ticketLink": "https://fatso.ma/fpc2b"
   },
+    {
+    "title": "A Creative Evening with Soke-on-Trent’s Poet Laureate, Steven Beattie",
+    "date": "Friday 9 October 6:30pm",
+    "location": "Stoke Library",
+    "cta": "Drop In",
+    "price": "Free",
+    "audience": "14+",
+    "content": "Join us for an evening of poetry with Stoke-on-Trent’s Poet Laureate, Steven Beattie. Steven will be talking about how he came to be awarded the Poet laureate title, his love of poetry as well as sharing some of his superb poetry. Steven will also be sharing some poetry prompts and encouraging the audience to put pen to paper. The perfect evening for poetry lovers and budding poets alike. This is an adult event and will contain adult themes and language.",
+    "image": "./assets/images/event-images/SteveBeattie.jpg",
+    "alt": "Steve Beattie image",
+    "ticketLink": "https://maps.app.goo.gl/jtYAZogR87jcE1zD8"
+  },
   {
     "title": "Take 10 to Read",
     "date": "Saturday 10 October 10am",
@@ -50,12 +62,12 @@
   },
   {
     "title": "Letters to My Future Self",
-    "date": "Saturday 10 October 10am - 2pm",
+    "date": "Saturday 10 October 10am - 12pm",
     "location": "Stoke Market",
     "cta": "Drop In",
     "price": "Free",
     "audience": "All Ages",
-    "content": "Kate Leake, Stoke-on-Trent’s creative Laureate, is also a book illustrator and author. She will host the ‘Letters to Myself’ Workshop at Stoke Market, where participants will write a letter, poem, or prose dedicated to themselves. The festival will post these to you a year later! It’s a chance to reflect on the past or envision your future, with creative tips and inspiration from Kate as you illustrate your message, hopefully bringing a smile to your future self. All Ages - children accompanied by an adult",
+    "content": "Join Kate Leake, an author, illustrator and Stoke-on-Trent’s current Creativity Laureate. Kate will host an interactive, creative ‘Letters to My Future Self’ workshop at Stoke Market as part of the inaugural Stoke Book Festival. Participants can choose to write a letter, a poem, a short piece of prose or even draw a picture dedicated to themselves. When you’ve completed your letter, hand it in and the festival will post these letters to you a year later.Letters to My Future Self is a chance to reflect on the past or envision the future – with creative tips and guidance from Kate as you illustrate your message, hopefully bringing a smile to your future self.",
     "image": "./assets/images/event-images/LettersToMyself.jpg",
     "alt": "Kate Leake image",
     "ticketLink": "https://maps.app.goo.gl/D5FWXcw1T9p8Ekxy7"

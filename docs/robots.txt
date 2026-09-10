@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stokebookfestival.co.uk/sitemap.xml
