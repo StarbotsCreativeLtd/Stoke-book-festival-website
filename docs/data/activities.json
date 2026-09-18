@@ -11,17 +11,18 @@
     "alt": "Story Tea Image",
     "ticketLink": "https://fatso.ma/fpc2g"
   },
+
   {
-    "title": "Stoke Book Club: Book Chat",
-    "date": "Wednesday 7 October 11am",
-    "location": "TBC",
-    "cta": "Drop In",
+    "title": "Take 10 to Read",
+    "date": "Thursday 8 October 10am",
+    "location": "Online & Stoke Library ",
+    "cta": "Find Out More",
     "price": "Free",
-    "audience": "18+",
-    "content": "No book festival is complete without launching a new book club. Join the Stoke Book Festival’s Book Club and begin your journey into books.",
-    "image": "./assets/images/event-images/BookChat.jpg",
-    "alt": "Book Chat image",
-    "ticketLink": ""
+    "audience": "All Ages",
+    "content": "During the Stoke Book Festival, the National Literacy Trust and the British Council will aim to set a new GUINNESS WORLD RECORDS™ title for the most people reading online in 12 hours on Thursday 8th October. This record attempt is part of the Take 10 to Read campaign in the National Year of Reading 2026. Now in its fifth year, Take 10 to Read highlights the wellbeing benefits of reading and encourages people of all ages to take just 10 minutes to read on and around World Mental Health Day. In the National Year of Reading, the message is simple: whatever you're into, take 10 to read into it.",
+    "image": "./assets/images/event-images/Comic.jpg",
+    "alt": "Take Ten Image",
+    "ticketLink": "https://literacytrust.org.uk/events/take-10-record-attempt/"
   },
 
   {
@@ -47,18 +48,6 @@
     "image": "./assets/images/event-images/SteveBeattie.jpg",
     "alt": "Steve Beattie image",
     "ticketLink": "https://www.fatsoma.com/e/zf3c7emp/a-creative-evening-with-stoke-on-trent-s-poet-laureate-steven-beattie"
-  },
-  {
-    "title": "Take 10 to Read",
-    "date": "Saturday 10 October 10am",
-    "location": "Stoke Library",
-    "cta": "Drop In",
-    "price": "Free",
-    "audience": "All Ages",
-    "content": "Each year on 10 October for World Mental Health Day the National Literacy Trust call on the nation to #Take10ToRead. Join us on the festival Saturday with your favourite book (or a new one) and join us at one of our venues, Stoke Minster or Stoke Library for free Event refreshment a moment of peace and tranquillity inside or outside and take 10 to read.",
-    "image": "./assets/images/event-images/TakeTen.jpg",
-    "alt": "Take Ten Image",
-    "ticketLink": "https://maps.app.goo.gl/jtYAZogR87jcE1zD8"
   },
   {
     "title": "Letters to My Future Self",
