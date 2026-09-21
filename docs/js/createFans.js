@@ -52,6 +52,15 @@ for (let i = 0; i < 72; i++) {
   minsterCardContainer.appendChild(leaf);
 }
 
+const minsterCardContainerSmall = document.querySelector(".minster-fan-container-small");
+
+for (let i = 0; i < 72; i++) {
+  const leaf = document.createElement("div");
+  leaf.className = `minster-ray-line`;
+  leaf.style.setProperty("--i", i);
+  minsterCardContainerSmall.appendChild(leaf);
+}
+
 const centralLibraryCardContainer = document.querySelector(".central-library-fan-container");
 
 for (let i = 0; i < 72; i++) {

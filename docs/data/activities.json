@@ -1,5 +1,42 @@
 [
   {
+    "title": "Iconic Book Food Cooking Session",
+    "date": "Monday 5 October 10am - 12pm",
+    "location": "YMCA",
+    "cta": "Reserve Now",
+    "price": "Free Event",
+    "audience": "16+",
+    "content": "Remember those iconic dishes from storybooks that you always wished to taste? If so, October 5th is your day. Join us at YMCA North Staffordshire for a workshop where we'll recreate recipes inspired by famous books for an incredible literary feast! Led by one of our master chefs, you'll be guided through each step to create a mini version of a book-inspired dish to take home.",
+    "image": "./assets/images/event-images/Cooking.jpg",
+    "alt": "Decoration",
+    "ticketLink": "https://www.google.com/maps/place/YMCA+North+Staffordshire/@53.0175702,-2.1773871,17z/data=!3m1!4b1!4m6!3m5!1s0x487a69d2d13849cf:0x28146a31b3e35541!8m2!3d53.017567!4d-2.1748122!16s%2Fg%2F1tfb62md?entry=tts&g_ep=EgoyMDI2MDkxNi4wIPu8ASoASAFQAw%3D%3D&skid=a1646745-69be-424b-935b-5b7a30bba06c"
+  },
+  {
+    "title": "Literature Arts & Crafts",
+    "date": "Monsay 5 October 3pm - 4:30pm",
+    "location": "YMCA",
+    "cta": "Reserve Now",
+    "price": "Free Event",
+    "audience": "All Ages",
+    "content": "Ever wish you could step into your favourite storybook and explore a new world? We're blending crafting with literature in a book lovers' activity, where you'll make fun DIY trinkets that celebrate beloved stories. It's a memorable crafternoon with a variety of book-themed crafts to choose from, letting you jump in and out as you like. Options include quote canvases and Harry Potter wand-making, catering to crafters of all skill levels.",
+    "image": "./assets/images/event-images/Crafting.jpg",
+    "alt": "Decoration",
+    "ticketLink": "https://mail.google.com/mail/u/0/#inbox/FMfcgzQhWTtWmqMLGLxWTHLGLvmKfrQc"
+  },
+  {
+    "title": "Creative Writing Workshop",
+    "date": "Tuesday 6 October 6pm - 7:30pm",
+    "location": "YMCA",
+    "cta": "Reserve Now",
+    "price": "Free Event",
+    "audience": "16+",
+    "content": "Discover where your imagination can lead you by joining our enchanting creative writing workshop. Led by multi-award-winning author Emma Fitzsimmons, the session will focus on literary themes to help you craft short stories, poems, and other written works. Come and fall down the rabbit hole with us. To conclude, there will be a 'letters to myself' activity, allowing you to write a personal letter to be opened in 12 months, a way to capture and revisit a special moment in time.",
+    "image": "./assets/images/event-images/Creative Writing.jpg",
+    "alt": "Decoration",
+    "ticketLink": "https://mail.google.com/mail/u/0/#inbox/FMfcgzQhWTtWmqMLGLxWTHLGLvmKfrQc"
+  },
+
+  {
     "title": "Story Tea",
     "date": "Tuesday 6 October 7pm",
     "location": "Stoke Library",
@@ -7,9 +44,21 @@
     "price": "£5",
     "audience": "14+",
     "content": "Let professional storyteller Pyn Stockman guide you on an extraordinary storytelling journey from the comfort of the library. Pyn will wrap you up in beautiful tales crafted from British myth, legend and folklore, whilst you brew your own ‘story tea’ in fine china teapots guided by master herbalist, Arlene Burnett. These tales are magical, mesmerising and often have a dark twist – making it a perfect story mix. You’ll find elements from the stories shared this evening may make their way into your own unique story tea which you can sip and enjoy while sitting back and relaxing along with this masterful performance.",
-    "image": "./assets/images/event-images/StoryTea.jpg",
+    "image": "./assets/images/event-images/Story-Tea.jpg",
     "alt": "Story Tea Image",
     "ticketLink": "https://fatso.ma/fpc2g"
+  },
+  {
+    "title": "Screening of Arnold Bennett’s Amazing Women",
+    "date": "Wednesday 7 October 12pm",
+    "location": "Spode Museum",
+    "cta": "Drop In",
+    "price": "Free Event",
+    "audience": "14+",
+    "content": "A special free screening of Arnold Bennett's Amazing Women on Wednesday 7 October at 12:00, hosted at Spode Museum, Elenora Street, Stoke-on-Trent. Presented in partnership with the Arnold Bennett Society and the Staffordshire Film Archive, this event celebrates the remarkable female characters brought to life across Bennett's novels — including Hilda Lessways, Anna of the Five Towns, and Leonora. A wonderful chance to explore Bennett's literary legacy through archive film.",
+    "image": "./assets/images/event-images/screening.jpg",
+    "alt": "Story Tea Image",
+    "ticketLink": "https://maps.app.goo.gl/QJVf9VKCQ7JJUhzCA"
   },
 
   {
@@ -33,11 +82,11 @@
     "price": "£10",
     "audience": "14+",
     "content": "Enjoy a stunning performance by the City of Stoke-on-Trent Symphony Orchestra and vocalist Jordan Harding. They will take you on a musical journey through English song and stories linked to famous authors, poets, and composers, including some new discoveries. The concert begins at 7 pm, but arrive by 6:15pm for a pre-concert talk with Artistic Director Joe Hearson, who will introduce the evening and discuss the music's inspiration from poems and words.",
-    "image": "./assets/images/event-images/symphony.jpg",
+    "image": "./assets/images/event-images/music.jpg",
     "alt": "Symphony Orchestra image",
     "ticketLink": "https://fatso.ma/fpc2b"
   },
-    {
+  {
     "title": "A Creative Evening with Stoke-on-Trent’s Poet Laureate, Steven Beattie",
     "date": "Friday 9 October 6:30pm",
     "location": "Stoke Library",

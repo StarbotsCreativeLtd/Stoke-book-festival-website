@@ -252,6 +252,7 @@ function renderCard(event, cardBackground, primaryColour, isSwiper) {
 
 function renderEvents(events, cardBackground, primaryColour, grid, filler) {
   const emptySpaces = 3 - (events.length % 3);
+  console.log(emptySpaces);
   const chunkedEvents = filler === "authors" ? [events] : chunkArrayInGroups(events, 5);
 
   // MOBILE SWIPERS
@@ -284,7 +285,7 @@ function renderEvents(events, cardBackground, primaryColour, grid, filler) {
   let fillerDivs = [];
 
   if (filler === "authors" && emptySpaces < 3) {
-    emptySpaces === 2 ? fillerDivs.push(minsterCardTwo) : fillerDivs(minsterCardOne);
+    emptySpaces === 2 ? fillerDivs.push(minsterCardTwo) : fillerDivs.push(minsterCardOne);
   }
 
   if (filler === "workshops") {

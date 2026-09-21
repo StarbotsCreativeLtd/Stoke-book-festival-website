@@ -105,6 +105,18 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  gsap.to(".minster-fan-container-small", {
+    rotate: 12,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".minster-fan-container-small",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true,
+      invalidateOnRefresh: true,
+    },
+  });
+
   gsap.to(".central-library-fan-container", {
     rotate: 16,
     // transformOrigin: "50% 130%",
