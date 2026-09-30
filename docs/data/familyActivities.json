@@ -27,8 +27,8 @@
     "location": "Stoke Library",
     "cta": "Drop in",
     "price": "Free",
-    "audience": "TBC",
-    "content": "",
+    "audience": "3 -12",
+    "content": "Join local author Christine Johnson as she reads from her enchanting children's book, The Magic Rockinghorse! On Christmas morning, Kristen finds a beautiful rocking horse called Gibraltar waiting under the tree. That night, he comes to life! Gibraltar was once the star Trick Horse at Philip Astley's Circus, until an evil magician turned him into a rocking horse. Can Kristen and her brother Max help him get back to the circus and break the spell? After the story, children can get creative with some magical crafts to take home. This is a lovely event for families, so come along and step into a world of circus magic!",
     "image": "",
     "ticketLink": "https://maps.app.goo.gl/NtWW8vdSMt3BhUr7A"
   },
@@ -122,6 +122,17 @@
     "ticketLink": "https://maps.app.goo.gl/LoRbwEnqG5pJNo958"
   },
   {
+    "title": "Polly Pin ",
+    "date": "Wednesday 7 October 1pm",
+    "location": "",
+    "cta": "Email for More",
+    "price": "",
+    "audience": "",
+    "content": "Children listen to The Story of Polly Pin and sing along to new songs before setting off on a sewing journey, meeting Polly, a curious pin who lives in the sewing room with all the other sewing tools. During the festival, these workshops are for schools only. If you'd like to find out more, email hello@stokebookfestival.co.uk. This event has been made possible through the National Literacy Trust.",
+    "image": "",
+    "ticketLink": "mailto:hello@stokebookfestival.co.uk"
+  },
+  {
     "title": "Christine Johnson Local Childrens Author",
     "date": "Thursday 8 October 10am",
     "location": "Stoke Library",
@@ -175,6 +186,17 @@
     "content": "Singing Dragons is a gentle mix of rhymes and songs which is perfect for our youngest library users.",
     "image": "",
     "ticketLink": "https://maps.app.goo.gl/NtWW8vdSMt3BhUr7A"
+  },
+  {
+    "title": "Polly Pin ",
+    "date": "Wednesday 7 October 1pm",
+    "location": "",
+    "cta": "Email for More",
+    "price": "",
+    "audience": "",
+    "content": "Children listen to The Story of Polly Pin and sing along to new songs before setting off on a sewing journey, meeting Polly, a curious pin who lives in the sewing room with all the other sewing tools. During the festival, these workshops are for schools only. If you'd like to find out more, email hello@stokebookfestival.co.uk. This event has been made possible through the National Literacy Trust.",
+    "image": "",
+    "ticketLink": "mailto:hello@stokebookfestival.co.uk"
   },
   {
     "title": "Paige Turner takes 10 ",
